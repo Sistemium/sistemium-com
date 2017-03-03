@@ -1,0 +1,48 @@
+md-toolbar.toolbar-fixed-top.white-background.md-menu-toolbar.md-whiteframe-1dp
+  .md-toolbar-tools(layout='row' layout-align='space-between center')
+    a(ui-sref='home' style='padding-top: 4px;')
+      img.top-logo(ng-src='{{windowWidth < 450 ? "images/logo-230x150.png" : "images/top-logo.jpg"}}')
+
+    .margin-left.visible-print-inline(flex)
+      small(ng-show='!vm.isAdmin && (windowWidth > 850 || windowWidth < 799)')
+        a(href='tel:+74957668887') +7(495)766-888-7
+
+    md-button.tool-button.hidden-tight(
+    ng-repeat='btn in vm.buttons track by btn.sref'
+    ui-sref='{{btn.sref}}'
+    ui-sref-active='md-primary'
+    ng-class='btn.cls'
+    ) {{ btn.label }}
+
+    md-fab-speed-dial.md-scale.fab-menu.shown-tight(
+    md-direction='down'
+    )
+      md-fab-trigger
+        md-button.md-fab.md-mini.md-icon-button.md-primary.tool-button(aria-label='menu')
+          i.material-icons menu
+      md-fab-actions
+        md-button.md-raised.md-mini.custom-fab.tool-button(
+        ng-repeat='fab in vm.navs track by fab.sref'
+        aria-label='{{fab.sref}}'
+        ui-sref='{{fab.sref}}'
+        ui-sref-active='md-primary'
+        ) {{ fab.label }}
+
+    span.hidden-tight.margin-left
+
+    md-button.md-fab.md-icon-button.md-mini.hidden-tight(
+    ng-click='vm.loginBtnClick()'
+    aria-label='login-button'
+    ng-disabled='!!vm.settingUser'
+    ui-sref-active='active'
+    ng-class=" vm.loggedIn ? 'default-button' : 'important-button' "
+    )
+      i.material-icons {{ vm.loggedIn ? 'lock_open' : 'lock_outline' }}
+
+    div.with-badge(flex='none')
+      md-button.md-fab.md-mini.md-icon-button(ui-sref='cart' ui-sref-active='active')
+        i.material-icons shopping_cart
+      span.badge(
+      ng-show='vm.cart.length'
+      ng-class="vm.cart.length > 9 ? 'badge-large' : 'badge-small' "
+      ) {{ vm.cart.length }}
