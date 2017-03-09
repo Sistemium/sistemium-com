@@ -17,7 +17,11 @@
     "sistemium-angular-auth": "^0.1.10",
     "lf-ng-md-file-input": "^1.4.6",
     "ng-file-upload": "^12.0.4",
-    "ya-map": "angular-yandex-map#^1.0.9"
+    "ya-map": "angular-yandex-map#^1.0.9",
+    "flag-icon-css": "^2.8.0",
+    "angular-translate": "^2.15.1",
+    "angular-translate-storage-local": "^2.15.1",
+    "angular-translate-storage-cookie": "^2.15.1"
   },
   "overrides": {
     "angular-ui-bootstrap": {
@@ -51,6 +55,5 @@
       ]
     }
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

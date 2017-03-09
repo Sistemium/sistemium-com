@@ -9,21 +9,63 @@
   };
 
   /** @ngInject */
-  function NavbarController($scope, $window) {
+  function NavbarController(StyleService, $translate, $state, localStorageService) {
 
     const vm = this;
 
     _.assign(vm, {
 
+      changeLanguage,
+      changeStyle,
+      openMenu,
+      changeState,
+
+      languages: [
+        {label: 'English (US)', key: 'us'},
+        {label: 'Русский', key: 'ru'},
+        {label: 'Lietuvių', key: 'lt'}
+      ],
+
+      items: [
+        {state: 'services'},
+        {state: 'contacts'},
+        {state: 'about'}
+      ],
+
+      lang: localStorageService.get('lang') || 'us',
+      style: StyleService.getStyle(),
+      availableStyles: StyleService.availableStyles()
+
     });
 
-    $scope.$on('logged-off', function () {
-      $window.location.href = '';
-    });
+    vm.items = _.map(vm.items, item => _.assign(item, {
+      translate: _.toUpper(item.state)
+    }));
+
 
     /*
-    Functions
+     Functions
      */
+
+    function changeState(item) {
+      $state.go(item.state);
+    }
+
+    function changeLanguage(lang) {
+
+      localStorageService.set('lang', lang.key);
+      $translate.use(vm.lang = lang.key);
+
+    }
+
+    function openMenu($mdMenu, ev) {
+      $mdMenu.open(ev);
+    }
+
+    function changeStyle(style) {
+      vm.style = style;
+      StyleService.setStyle(style);
+    }
 
   }
 

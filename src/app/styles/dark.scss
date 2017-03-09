@@ -1,0 +1,33 @@
+.dark {
+  md-content {
+    background: red !important;
+    border: 1px solid black;
+    root-navbar {
+      background: gray;
+      & > md-toolbar {
+        background: gray !important;
+        width: 100%;
+
+        md-menu {
+          &.lang {
+            background: blue;
+          }
+          &.style {
+            background: cornflowerblue;
+          }
+        }
+      }
+
+    }
+
+    .viewport{
+      #about {
+        h1 {
+          color: white;
+        }
+      }
+    }
+
+  }
+
+}

@@ -2,21 +2,19 @@
 
 (function () {
 
-
   angular
     .module('stcom')
     .run(runBlock)
     .run(makeMeasureDigest)
-    .run(function(amMoment) {
+    .run(function (amMoment) {
       // TODO: need dependency on current language
       amMoment.changeLocale('ru');
     });
 
+
   /** @ngInject */
   function runBlock($log) {
-
     $log.debug('runBlock end');
-
   }
 
   function makeMeasureDigest($window) {

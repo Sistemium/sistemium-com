@@ -2,12 +2,12 @@
 
 (function () {
 
-  function RouterDecorator($rootScope, $state, localStorageService, $window) {
+  function RouterDecorator($rootScope, localStorageService, $window) {
 
 
     $rootScope.$on('$stateChangeSuccess', (event, toState) => {
 
-      var parentDefaultChild = _.get(toState,'parent.defaultChild');
+      var parentDefaultChild = _.get(toState, 'parent.defaultChild');
 
       if (parentDefaultChild) {
 

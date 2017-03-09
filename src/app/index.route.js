@@ -10,9 +10,9 @@
   function routerConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: '/?access-token',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
+        url: '/home',
+        templateUrl: 'app/domain/home/home.html',
+        controller: 'HomeController',
         controllerAs: 'vm'
       });
 

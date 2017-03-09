@@ -1,0 +1,23 @@
+.minimalistic {
+  md-content {
+    background: green !important;
+    root-navbar {
+      background: gray;
+      & > md-toolbar {
+        background: gray !important;
+        width: 100%;
+
+        md-menu {
+          &.lang {
+            background: royalblue;
+          }
+          &.style {
+            background: yellow;
+          }
+        }
+      }
+
+    }
+  }
+
+}

@@ -1,48 +1,52 @@
-md-toolbar.toolbar-fixed-top.white-background.md-menu-toolbar.md-whiteframe-1dp
-  .md-toolbar-tools(layout='row' layout-align='space-between center')
-    a(ui-sref='home' style='padding-top: 4px;')
-      img.top-logo(ng-src='{{windowWidth < 450 ? "images/logo-230x150.png" : "images/top-logo.jpg"}}')
+md-toolbar.toolbar-fixed-top.white-background.md-menu-toolbar(
+layout='row'
+layout-align='center center'
+style='border-bottom: 1px solid rgba(0, 0, 0, 0.43); padding: 0 5px'
+)
 
-    .margin-left.visible-print-inline(flex)
-      small(ng-show='!vm.isAdmin && (windowWidth > 850 || windowWidth < 799)')
-        a(href='tel:+74957668887') +7(495)766-888-7
+  div(style='margin:0' layout='row' layout-align='center center')
+    img(src='/app/images/logo-square.png' style='width: 35px; height: 35px; margin-right: 5px')
+    p(hide-xs) SISTEMIUM
 
-    md-button.tool-button.hidden-tight(
-    ng-repeat='btn in vm.buttons track by btn.sref'
-    ui-sref='{{btn.sref}}'
-    ui-sref-active='md-primary'
-    ng-class='btn.cls'
-    ) {{ btn.label }}
-
-    md-fab-speed-dial.md-scale.fab-menu.shown-tight(
-    md-direction='down'
+  div(layout='row' layout-align='end center' style='height: 100%; width: 100%' flex)
+    md-button(
+    ng-repeat='item in vm.items track by item.state'
+    style='margin: 0; height: 64px'
+    translate="{{ item.translate }}"
+    aria-label='{{ item.state }}'
+    ng-click='vm.changeState(item)'
     )
-      md-fab-trigger
-        md-button.md-fab.md-mini.md-icon-button.md-primary.tool-button(aria-label='menu')
-          i.material-icons menu
-      md-fab-actions
-        md-button.md-raised.md-mini.custom-fab.tool-button(
-        ng-repeat='fab in vm.navs track by fab.sref'
-        aria-label='{{fab.sref}}'
-        ui-sref='{{fab.sref}}'
-        ui-sref-active='md-primary'
-        ) {{ fab.label }}
 
-    span.hidden-tight.margin-left
-
-    md-button.md-fab.md-icon-button.md-mini.hidden-tight(
-    ng-click='vm.loginBtnClick()'
-    aria-label='login-button'
-    ng-disabled='!!vm.settingUser'
-    ui-sref-active='active'
-    ng-class=" vm.loggedIn ? 'default-button' : 'important-button' "
+  md-menu.lang
+    md-button(
+    aria-label='Choose language'
+    ng-click='vm.openMenu($mdMenu, $event)'
+    layout='row' layout-align='center center'
+    style='margin: 0; height: 64px'
     )
-      i.material-icons {{ vm.loggedIn ? 'lock_open' : 'lock_outline' }}
+      span(hide-xs) {{vm.lang.toUpperCase()}}
+      i.material-icons language
 
-    div.with-badge(flex='none')
-      md-button.md-fab.md-mini.md-icon-button(ui-sref='cart' ui-sref-active='active')
-        i.material-icons shopping_cart
-      span.badge(
-      ng-show='vm.cart.length'
-      ng-class="vm.cart.length > 9 ? 'badge-large' : 'badge-small' "
-      ) {{ vm.cart.length }}
+    md-menu-content(width='1')
+      md-menu-item(ng-repeat='lang in vm.languages track by lang.key')
+        md-button(
+        ng-click='vm.changeLanguage(lang)'
+        ng-class='{active: lang.key == vm.lang}'
+        )
+          p {{lang.label}}
+          md-icon.flag-icon(ng-class='"flag-icon-" +lang.key')
+
+  md-menu.style
+    md-button(
+    aria-label='Choose style'
+    ng-click='vm.openMenu($mdMenu, $event)'
+    layout='row' layout-align='center center'
+    style='margin: 0; height: 64px'
+    )
+      span(hide-xs translate='STYLES.{{vm.style}}') STYLES.{{vm.style}}
+      i.material-icons color_lens
+
+    md-menu-content(width='1')
+      md-menu-item(ng-repeat='style in vm.availableStyles track by $index')
+        md-button(ng-click='vm.changeStyle(style)' ng-class='{active: style == vm.style}')
+          p(translate='STYLES.{{style}}') {{vm.availableStyles}}

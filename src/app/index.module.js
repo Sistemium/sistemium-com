@@ -16,7 +16,9 @@
       'ui.bootstrap.position',
       'yaMap',
       'ui.mask',
-      'angularMoment'
+      'angularMoment',
+      'pascalprecht.translate',
+      'ngCookies'
     ]);
 
 })();

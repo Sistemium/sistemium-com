@@ -2,14 +2,15 @@
 
 (function () {
 
-  function BodyController (saUserAgent) {
+  function BodyController(saUserAgent, StyleService) {
 
     const vm = this;
 
     _.assign(vm, {
 
       os: saUserAgent.os,
-      cls: saUserAgent.cls
+      cls: saUserAgent.cls,
+      currentStyle: () => StyleService.getStyle()
 
     });
 

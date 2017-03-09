@@ -22,7 +22,7 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body ng-controller="BodyController as bm" ng-class="[bm.currentStyle(),bm.cls]">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,10 +32,7 @@
       <md-content id="root-md-content" layout-fill>
         <root-navbar></root-navbar>
         <div class="root viewport" ui-view>
-          <div layout="column" layout-align="center center">
-            <h1>Загрузка</h1>
-            <md-progress-circular md-diameter="100" md-mode="indeterminate"></md-progress-circular>
-          </div>
+
         </div>
       </md-content>
 
