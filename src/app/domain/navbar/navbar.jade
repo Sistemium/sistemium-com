@@ -18,7 +18,6 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
       md-button(
       aria-label='Choose language'
       ng-click='vm.openMenu($mdMenu, $event)'
-      layout='row' layout-align='center center'
       )
         i.material-icons storage
 
@@ -35,7 +34,6 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
     md-button(
     aria-label='Choose language'
     ng-click='vm.openMenu($mdMenu, $event)'
-    layout='row' layout-align='center center'
     )
       span(hide-xs) {{vm.lang.toUpperCase()}}
       i.material-icons language
@@ -53,7 +51,6 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
     md-button(
     aria-label='Choose style'
     ng-click='vm.openMenu($mdMenu, $event)'
-    layout='row' layout-align='center center'
     )
       span(hide-xs translate='STYLES.{{vm.style}}') STYLES.{{vm.style}}
       i.material-icons color_lens
