@@ -53,6 +53,12 @@
      Functions
      */
 
+    function getCurrentState() {
+      return $timeout(() => {
+        return $state.current.name;
+      });
+    }
+
     function changeState(item) {
       $state.go(item.state);
     }
