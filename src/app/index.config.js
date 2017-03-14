@@ -5,6 +5,9 @@
   angular
     .module('stcom')
     .config(config)
+    .config($locationProvider => {
+      $locationProvider.hashPrefix('');
+    })
     .service('DEBUG', DEBUG);
 
 
