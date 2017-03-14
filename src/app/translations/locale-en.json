@@ -1,0 +1,22 @@
+{
+  "lang": "en",
+  "STYLES": {
+    "minimalistic": "Minimalistic",
+    "origin": "Origin",
+    "dark": "Dark",
+    "main": "Main"
+  },
+  "SERVICES": "Services",
+  "CONTACTS": "Contacts",
+  "ABOUT": "About",
+  "CONTACTSPAGE": {
+    "INFO": "Vilnius, Kareiviu st. 19"
+  },
+  "ABOUTPAGE": {
+    "PAGETEXT": "The company’s offerings include home appliances such as TVs, monitors, printers, refrigerators, and washing machines as well as key mobile telecommunications products like smartphones and tablets. Samsung also continues to be a trusted provider of key electronic components like DRAM and non-memory semiconductors. Samsung pledges to create and deliver quality products and services that enhance convenience and foster smarter lifestyles for its customers around the world. Samsung is dedicated to improving the global community through its constant pursuit of groundbreaking innovations and value creation."
+  },
+  "SERVICEPAGE": {
+    "PAGETEXT": "This is service page"
+  }
+}
+
