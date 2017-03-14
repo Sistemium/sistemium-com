@@ -19,6 +19,7 @@
       changeStyle,
       openMenu,
       changeState,
+      getCurrentState,
 
       languages: [
         {label: 'English', key: 'en', class: 'flag-icon-gb'},
