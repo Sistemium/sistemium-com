@@ -21,9 +21,9 @@
       changeState,
 
       languages: [
-        {label: 'English (US)', key: 'us'},
-        {label: 'Русский', key: 'ru'},
-        {label: 'Lietuvių', key: 'lt'}
+        {label: 'English', key: 'en', class: 'flag-icon-gb'},
+        {label: 'Русский', key: 'ru', class: 'flag-icon-ru'},
+        {label: 'Lietuvių', key: 'lt', class: 'flag-icon-lt'}
       ],
 
       items: [
