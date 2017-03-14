@@ -9,9 +9,10 @@
   };
 
   /** @ngInject */
-  function NavbarController(StyleService, $translate, $state, localStorageService) {
+  function NavbarController(StyleService, $translate, $state, localStorageService, LangService, $scope, moment, $timeout) {
 
     const vm = this;
+
 
     _.assign(vm, {
 
@@ -73,10 +74,8 @@
     }
 
     function changeLanguage(lang) {
-
       localStorageService.set('lang', lang.key);
       $translate.use(vm.lang = lang.key);
-
     }
 
     function openMenu($mdMenu, ev) {
