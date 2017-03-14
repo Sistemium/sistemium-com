@@ -42,6 +42,12 @@
       translate: _.toUpper(item.state)
     }));
 
+    $scope.$watch('vm.lang', (nv, ov) => {
+      if (nv !== ov) {
+        moment.locale(nv);
+        $state.go($state.current, {}, {reload: true});
+      }
+    });
 
     /*
      Functions
