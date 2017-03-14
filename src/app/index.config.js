@@ -21,6 +21,7 @@
       .preferredLanguage('en')
       .fallbackLanguage('en')
       .useLocalStorage();
+      .useSanitizeValueStrategy('escape');
 
     // Enable log
     $logProvider.debugEnabled(true);
