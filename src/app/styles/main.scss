@@ -1,5 +1,9 @@
 .main {
 
+  .active{
+    background: rgba(138, 138, 138, 0.2);
+  }
+  
   .lang-button {
     display: flex;
     flex-flow: row nowrap;
@@ -79,21 +83,14 @@
 
         md-menu {
 
-          &.lang {
+          button {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
             margin: 0;
+            height: 64px;
+          }
 
-            button {
-              margin: 0;
-              height: 64px;
-            }
-          }
-          &.style {
-            margin: 0;
-            button {
-              margin: 0;
-              height: 64px;
-            }
-          }
         }
       }
 
