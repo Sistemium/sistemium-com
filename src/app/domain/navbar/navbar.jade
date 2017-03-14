@@ -1,47 +1,59 @@
-md-toolbar.toolbar-fixed-top.white-background.md-menu-toolbar(
-layout='row'
-layout-align='center center'
-style='border-bottom: 1px solid rgba(0, 0, 0, 0.43); padding: 0 5px'
-)
+md-toolbar.toolbar-fixed-top.md-menu-toolbar
 
-  div(style='margin:0' layout='row' layout-align='center center')
-    img(src='/app/images/logo-square.png' style='width: 35px; height: 35px; margin-right: 5px')
-    p(hide-xs) SISTEMIUM
+  .logo
+    img(ng-src='/app/images/logo-square.png' ng-click='vm.changeState("home")')
 
-  div(layout='row' layout-align='end center' style='height: 100%; width: 100%' flex)
+  .buttons
+
     md-button(
+    hide-xs
     ng-repeat='item in vm.items track by item.state'
-    style='margin: 0; height: 64px'
     translate="{{ item.translate }}"
     aria-label='{{ item.state }}'
     ng-click='vm.changeState(item)'
+    ng-class='{active: item.state == vm.currentState}'
     )
+
+    md-menu.sandwich-button(show-xs hide)
+      md-button(
+      aria-label='Choose language'
+      ng-click='vm.openMenu($mdMenu, $event)'
+      layout='row' layout-align='center center'
+      )
+        i.material-icons storage
+
+      md-menu-content(width='3')
+        md-menu-item(ng-repeat='item in vm.items track by item.state')
+          md-button(
+          ng-class='{active: item.state == vm.currentState}'
+          translate="{{item.translate}}"
+          ng-click='vm.changeState(item)'
+          aria-label="{{item.translate}}"
+          )
 
   md-menu.lang
     md-button(
     aria-label='Choose language'
     ng-click='vm.openMenu($mdMenu, $event)'
     layout='row' layout-align='center center'
-    style='margin: 0; height: 64px'
     )
       span(hide-xs) {{vm.lang.toUpperCase()}}
       i.material-icons language
 
-    md-menu-content(width='1')
+    md-menu-content(width='3')
       md-menu-item(ng-repeat='lang in vm.languages track by lang.key')
-        md-button(
+        md-button.lang-button(
         ng-click='vm.changeLanguage(lang)'
         ng-class='{active: lang.key == vm.lang}'
         )
           p {{lang.label}}
-          md-icon.flag-icon(ng-class='"flag-icon-" +lang.key')
+          md-icon.flag-icon(ng-class='lang.class')
 
   md-menu.style
     md-button(
     aria-label='Choose style'
     ng-click='vm.openMenu($mdMenu, $event)'
     layout='row' layout-align='center center'
-    style='margin: 0; height: 64px'
     )
       span(hide-xs translate='STYLES.{{vm.style}}') STYLES.{{vm.style}}
       i.material-icons color_lens

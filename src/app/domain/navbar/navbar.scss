@@ -1,13 +1,5 @@
 @import "../../styles/vars";
 
-$toolbar-background-color: white;
-$toolbar-color: black;
-
-md-toolbar.toolbar-fixed-top.white-background {
-  background-color: $toolbar-background-color;
-  color: $toolbar-color;
-}
-
 .active{
   background: rgba(138, 138, 138, 0.2);
 }
