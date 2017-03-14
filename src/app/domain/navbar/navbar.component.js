@@ -27,9 +27,9 @@
       ],
 
       items: [
-        {state: 'services'},
-        {state: 'contacts'},
-        {state: 'about'}
+        {state: 'Services'},
+        {state: 'Contacts'},
+        {state: 'About'}
       ],
 
       lang: localStorageService.get('lang') || 'us',
