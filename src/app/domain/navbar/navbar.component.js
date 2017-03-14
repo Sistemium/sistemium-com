@@ -32,11 +32,17 @@
         {state: 'About'}
       ],
 
-      lang: localStorageService.get('lang') || 'us',
+      currentState: getCurrentState(),
+      lang: LangService.getLang(),
       style: StyleService.getStyle(),
       availableStyles: StyleService.availableStyles()
 
     });
+
+    vm.currentState.then((state) => {
+      vm.currentState = _.upperFirst(state);
+    });
+
 
     vm.items = _.map(vm.items, item => _.assign(item, {
       translate: _.toUpper(item.state)
