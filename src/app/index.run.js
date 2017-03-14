@@ -6,13 +6,17 @@
     .module('stcom')
     .run(runBlock)
     .run(makeMeasureDigest)
-    .run(function (amMoment) {
-      // TODO: need dependency on current language
-      amMoment.changeLocale('ru');
+    .run(function (amMoment, LangService, localStorageService) {
+
+      let localeLanguage = LangService.getLang();
+      amMoment.changeLocale(localeLanguage);
+      if (!localStorageService.get('lang'))
+        localStorageService.set('lang', 'en');
+
     });
 
-
   /** @ngInject */
+
   function runBlock($log) {
     $log.debug('runBlock end');
   }
