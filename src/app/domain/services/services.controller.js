@@ -6,10 +6,15 @@
     .module('stcom')
     .controller('ServicesController', ServicesController);
 
-  function ServicesController() {
+  function ServicesController(moment) {
 
     const vm = this;
-    _.assign(vm, {});
+    _.assign(vm, {
+
+      time: moment().get(),
+      today: moment().calendar()
+
+    });
 
   }
 
