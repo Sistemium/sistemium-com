@@ -4,7 +4,7 @@
 
   function StyleService(localStorageService) {
 
-    let currentStyle = localStorageService.get('style') || 'dark';
+    let currentStyle = localStorageService.get('style') || 'main';
 
     function getStyle() {
       return currentStyle;
