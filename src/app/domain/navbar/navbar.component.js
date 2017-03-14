@@ -60,7 +60,9 @@
     }
 
     function changeState(item) {
-      $state.go(item.state);
+      var toGo = _.get(item, 'state') || 'home';
+      vm.currentState = toGo;
+      $state.go(_.toLower(toGo));
     }
 
     function changeLanguage(lang) {
