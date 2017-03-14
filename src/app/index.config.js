@@ -11,17 +11,19 @@
     .service('DEBUG', DEBUG);
 
 
+  function config($logProvider, $mdThemingProvider, localStorageServiceProvider, $translateProvider) {
 
-    };
+    $translateProvider.useStaticFilesLoader({
+      prefix: 'app/translations/locale-',
+      suffix: '.json'
+    });
 
     $translateProvider
-      .translations('en', translationsEN)
-      .translations('lt', translationsLT)
-      .translations('ru', translationsRU)
       .preferredLanguage('en')
-      .fallbackLanguage('en')
-      .useLocalStorage();
+      .fallbackLanguage(['en', 'lt', 'ru'])
+      .useLocalStorage()
       .useSanitizeValueStrategy('escape');
+
 
     // Enable log
     $logProvider.debugEnabled(true);
