@@ -20,7 +20,6 @@
       changeStyle,
       openMenu,
       changeState,
-      getCurrentState,
 
       languages: [
         {label: 'English', key: 'en', class: 'flag-icon-gb'},
@@ -34,17 +33,12 @@
         {state: 'About'}
       ],
 
-      currentState: getCurrentState(),
+      currentState: null,
       lang: LangService.getLang(),
       style: StyleService.getStyle(),
       availableStyles: StyleService.availableStyles()
 
     });
-
-    vm.currentState.then((state) => {
-      vm.currentState = _.upperFirst(state);
-    });
-
 
     vm.items = _.map(vm.items, item => _.assign(item, {
       translate: _.toUpper(item.state)
@@ -57,15 +51,13 @@
       }
     });
 
+    $scope.$on('$stateChangeSuccess', (event, toState) => {
+      vm.currentState = toState.name;
+    });
+
     /*
      Functions
      */
-
-    function getCurrentState() {
-      return $timeout(() => {
-        return $state.current.name;
-      });
-    }
 
     function changeState(item) {
       var toGo = _.get(item, 'state') || 'home';
