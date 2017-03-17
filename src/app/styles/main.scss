@@ -1,19 +1,18 @@
 .main {
 
-  .active{
+  .active {
     background: rgba(138, 138, 138, 0.2);
   }
-  
+
   .lang-button {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
 
     p {
-      flex-grow: 1;
+      float: left;
     }
 
     md-icon {
+      float: right;
+      height: 35px;
       width: 25px;
       margin: 0;
     }
@@ -84,11 +83,16 @@
         md-menu {
 
           button {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
+
             margin: 0;
             height: 64px;
+          }
+          span {
+            vertical-align: top;
+          }
+          i {
+            vertical-align: middle;
+            margin-bottom: 2px
           }
 
         }
