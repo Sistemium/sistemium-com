@@ -18,7 +18,8 @@
       'ui.mask',
       'angularMoment',
       'pascalprecht.translate',
-      'ngCookies'
+      'ngCookies',
+      'ngMap'
     ]);
 
 })();
