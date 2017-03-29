@@ -6,6 +6,11 @@
     "dark": "Dark",
     "main": "Main"
   },
+  "HOME": {
+    "MOTTO": "Systematize",
+    "TEXT": "You are welcomed by a world of electronic data! Get rid of paper sheets and voice mail to save up your time.",
+    "BUTTON": "Get access"
+  },
   "SERVICES": "Services",
   "CONTACTS": "Contacts",
   "ABOUT": "About",
@@ -17,6 +22,12 @@
   },
   "SERVICEPAGE": {
     "PAGETEXT": "This is service page"
+  },
+
+  "COMMON":{
+    "LOADINGMAP": "Map is loading..."
   }
+
+
 }
 

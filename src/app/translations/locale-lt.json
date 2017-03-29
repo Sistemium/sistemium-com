@@ -6,6 +6,11 @@
     "dark": "Tamsus",
     "main": "Pagrindinis"
   },
+  "HOME": {
+    "MOTTO": "Sistematizuokitės",
+    "TEXT": "Sveiki atvykę į elektroninių duomenų pasaulį. Sutaupykite laiką atsisakydami popierių užrašams ir garso pašto.",
+    "BUTTON": "Gauti prieigą"
+  },
   "SERVICES": "Paslaugos",
   "CONTACTS": "Kontaktai",
   "ABOUT": "Apie",
@@ -17,5 +22,9 @@
   },
   "SERVICEPAGE": {
     "PAGETEXT": "Paslaugų puslapis"
+  },
+
+  "COMMON":{
+    "LOADINGMAP": "Žemėlapis yra kraunamas..."
   }
 }
