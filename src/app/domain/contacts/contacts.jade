@@ -1,3 +1,61 @@
-#contacts
-  h1 Sistemium
-  p(translate='CONTACTSPAGE.INFO')
+#contacts(
+resize='homePage'
+style='height: {{ homePage.windowHeight - homePage.offsetTop }}px'
+)
+
+  .showInfo(style='display: flex; flex-flow: column; justify-content: flex-start')
+    p.name UAB "Sistemium"
+    p.address A. Goštauto g. 8, LT-01106 Vilnius
+    .tel(style='display: flex; flex-flow: row; justify-content: flex-start')
+      p Telefonas:
+      span(style='flex: 1')
+      p +37000000000
+    .work-time(style='display: flex; flex-flow: row; justify-content: flex-start')
+      p Darbo laikas:
+      span(style='flex: 1')
+      p I-V 8-19
+
+  .map-block
+
+    ng-map(
+    center="[54.693445, 25.269182]"
+    zoom='15'
+    ng-if='vm.currentLang !== "ru"'
+    street-view-control='false'
+    )
+      marker(position="54.693445, 25.269182" on-click="vm.showToast()")
+
+    .loader-wrapper(ng-show='!vm.map.ready && vm.currentLang == "ru"')
+      md-progress-circular(
+      )
+      p(translate='COMMON.LOADINGMAP')
+
+    ya-map.ya-map(
+    ng-if='vm.currentLang == "ru"'
+    ya-center='[25.2691563, 54.6936179]'
+    ng-show='vm.map.ready'
+    ya-controls=''
+    ya-zoom="16"
+    ya-behaviors='multiTouch, drag'
+    ya-after-init='vm.afterMapInit($target)'
+    ya-name='zoomControl'
+    )
+      ya-geo-object(
+      ya-options="{preset:'islands#nightStretchyIcon'}"
+      ya-source="vm.map.marker"
+      )
+
+  .contacts-block
+    p.contact-us Свяжитесь с нами
+
+    .form-block
+
+      input(ng-model='vm.name' placeholder='Введите имя...')
+
+      input(ng-model='vm.name' placeholder='Введите e-mail...')
+
+      textarea(placeholder='Введите сообщение...' rows='4')
+
+      input.send-button(value='Отправить' type='submit')
+
+
