@@ -2,8 +2,7 @@
 
 (function () {
 
-  angular
-    .module('stcom')
+  angular.module('stcom')
     .config(routerConfig);
 
   /** @ngInject */
@@ -11,9 +10,7 @@
     $stateProvider
       .state('about', {
         url: '/about',
-        templateUrl: 'app/domain/about/about.html',
-        controller: 'AboutController',
-        controllerAs: 'vm'
+        template: '<page-about></page-about>'
       });
   }
 

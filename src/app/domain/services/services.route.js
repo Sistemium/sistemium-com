@@ -11,9 +11,7 @@
     $stateProvider
       .state('services', {
         url: '/services',
-        templateUrl: 'app/domain/services/services.html',
-        controller: 'ServicesController',
-        controllerAs: 'vm'
+        template: '<page-services></page-services>'
       });
   }
 

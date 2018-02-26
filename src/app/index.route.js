@@ -11,9 +11,7 @@
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'app/domain/home/home.html',
-        controller: 'HomeController',
-        controllerAs: 'vm'
+        template: '<page-home></page-home>'
       });
 
     $urlRouterProvider.otherwise('home');

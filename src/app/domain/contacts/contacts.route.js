@@ -2,8 +2,7 @@
 
 (function () {
 
-  angular
-    .module('stcom')
+  angular.module('stcom')
     .config(routerConfig);
 
   /** @ngInject */
@@ -11,9 +10,7 @@
     $stateProvider
       .state('contacts', {
         url: '/contacts',
-        templateUrl: 'app/domain/contacts/contacts.html',
-        controller: 'ContactsController',
-        controllerAs: 'vm'
+        template: '<page-contacts></page-contacts>'
       });
   }
 
