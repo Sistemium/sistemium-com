@@ -1,6 +1,6 @@
 require('sistemium-gulp')
   .config({
-    ngModule: 'vseramki',
+    ngModule: 'stcom',
     browserSync: {
       port: 3010,
       ui: {
