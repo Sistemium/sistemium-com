@@ -1,4 +1,5 @@
 @import "vars";
+@import "mixins";
 
 $padding-main: 10px;
 
@@ -21,13 +22,13 @@ $padding-main: 10px;
   }
 
   #root-md-content {
-    max-width: 1024px;
+    max-width: $screen-md;
     margin-left: auto;
     margin-right: auto;
   }
 
   .lead {
-    color: darken($gray, 10%);
+    color: darken($gray, 15%);
     line-height: 1.5;
     font-size: 120%;
   }

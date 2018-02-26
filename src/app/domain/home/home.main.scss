@@ -33,6 +33,7 @@
     }
 
     @include responsive-only(xxs) {
+      margin-top: 5px;
       > .md-button {
         width: 100%;
         margin: auto;
@@ -42,7 +43,9 @@
   }
 
   .services {
+
     md-list-item {
+
       md-icon {
 
         background-color: lighten($gray, 35%);
@@ -61,9 +64,18 @@
         }
 
       }
+
       .md-secondary-container {
         flex: 1;
       }
+
+      @include responsive-only(xxs) {
+        .md-list-item-text {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+
     }
   }
 

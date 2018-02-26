@@ -1,9 +1,16 @@
 @import "main/main";
+@import "mixins";
 
 .main root-navbar {
 
   $padding: $padding-main/2;
   $margin: $padding-main;
+
+  display: block;
+
+  @include responsive-only(gt-md) {
+    margin-top: $margin * 2;
+  }
 
   & > md-toolbar {
 
