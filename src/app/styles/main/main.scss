@@ -13,6 +13,12 @@ $padding-main: 10px;
     margin-right: auto;
   }
 
+  .lead {
+    color: $gray;
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
   root-footer {
 
     position: absolute;
@@ -31,10 +37,6 @@ $padding-main: 10px;
 
     }
 
-  }
-
-  .active {
-    background: rgba(138, 138, 138, 0.2);
   }
 
   .lang-button {
@@ -63,13 +65,20 @@ $padding-main: 10px;
 
       padding: 0 $margin;
 
+      .md-button {
+        border-radius: 0;
+      }
+
+      .active {
+        background: lighten($gray, 30%);
+      }
+
       .sandwich-button {
         height: 64px;
         margin: 0;
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-end;
-
       }
 
       .logo {

@@ -13,7 +13,6 @@
 
     const vm = this;
 
-
     _.assign(vm, {
 
       changeLanguage,
@@ -28,9 +27,9 @@
       ],
 
       items: [
-        {state: 'Services'},
-        {state: 'Contacts'},
-        {state: 'About'}
+        {state: 'services'},
+        {state: 'contacts'},
+        {state: 'about'}
       ],
 
       currentState: null,
@@ -60,8 +59,7 @@
      */
 
     function changeState(item) {
-      var toGo = _.get(item, 'state') || 'home';
-      vm.currentState = toGo;
+      let toGo = _.get(item, 'state') || 'home';
       $state.go(_.toLower(toGo));
     }
 

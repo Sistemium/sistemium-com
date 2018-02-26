@@ -11,7 +11,7 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
     translate="{{ item.translate }}"
     aria-label='{{ item.state }}'
     ng-click='vm.changeState(item)'
-    ng-class='{active: item.state == vm.currentState}'
+    ng-class='{active: item.state === vm.currentState}'
     )
 
     md-menu.sandwich-button(show-xs hide)
@@ -24,7 +24,7 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
       md-menu-content(width='3')
         md-menu-item(ng-repeat='item in vm.items track by item.state')
           md-button(
-          ng-class='{active: item.state == vm.currentState}'
+          ng-class='{active: item.state === vm.currentState}'
           translate="{{item.translate}}"
           ng-click='vm.changeState(item)'
           aria-label="{{item.translate}}"
@@ -42,7 +42,7 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
       md-menu-item(ng-repeat='lang in vm.languages track by lang.key')
         md-button.lang-button(
         ng-click='vm.changeLanguage(lang)'
-        ng-class='{active: lang.key == vm.lang}'
+        ng-class='{active: lang.key === vm.lang}'
         )
           p {{lang.label}}
           md-icon.flag-icon(ng-class='lang.class')
