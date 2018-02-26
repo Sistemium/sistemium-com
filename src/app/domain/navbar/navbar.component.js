@@ -2,11 +2,14 @@
 
 (function () {
 
-  const rootNavbar = {
-    templateUrl: 'app/domain/navbar/navbar.html',
-    controller: NavbarController,
-    controllerAs: 'vm'
-  };
+  angular.module('stcom')
+    .component('rootNavbar', {
+
+      templateUrl: 'app/domain/navbar/navbar.html',
+      controller: NavbarController,
+      controllerAs: 'vm'
+
+    });
 
   /** @ngInject */
   function NavbarController(StyleService, $translate, $state, localStorageService, LangService, $scope, moment) {
@@ -78,9 +81,5 @@
     }
 
   }
-
-  angular.module('stcom')
-    .component('rootNavbar', rootNavbar);
-
 
 })();

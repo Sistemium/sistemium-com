@@ -6,7 +6,7 @@
     .component('pageServices', {
 
       bindings: {},
-      templateUrl: '/app/domain/services/services.html',
+      templateUrl: 'app/domain/services/services.html',
       controller: ServicesController,
       controllerAs: 'vm'
 

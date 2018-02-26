@@ -4,7 +4,7 @@
     .component('rootFooter', {
 
       bindings: {},
-      templateUrl: '/app/domain/rootFooter/rootFooter.html'
+      templateUrl: 'app/domain/rootFooter/rootFooter.html'
 
     });
 

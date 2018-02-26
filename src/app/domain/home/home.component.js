@@ -7,7 +7,7 @@
 
       bindings: {},
 
-      templateUrl: '/app/domain/home/home.html',
+      templateUrl: 'app/domain/home/home.html',
       controller: HomeController,
       controllerAs: 'vm'
 

@@ -8,7 +8,7 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
     md-button(
     hide-xs
     ng-repeat='item in vm.items track by item.state'
-    translate="{{ item.translate }}"
+    translate='{{ item.translate }}'
     aria-label='{{ item.state }}'
     ng-click='vm.changeState(item)'
     ng-class='{active: item.state === vm.currentState}'
@@ -25,9 +25,9 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
         md-menu-item(ng-repeat='item in vm.items track by item.state')
           md-button(
           ng-class='{active: item.state === vm.currentState}'
-          translate="{{item.translate}}"
+          translate='{{item.translate}}'
           ng-click='vm.changeState(item)'
-          aria-label="{{item.translate}}"
+          aria-label='{{item.translate}}'
           )
 
   md-menu.lang
