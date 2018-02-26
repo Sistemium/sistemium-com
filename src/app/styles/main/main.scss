@@ -19,7 +19,18 @@ $border-radius-main: 5px;
   }
 
   h1 {
+    font-size: 300%;
     color: lighten($black, 15%);
+  }
+
+  @include responsive-only(xxs) {
+
+    .lead, &.chapter h1, .options {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
   }
 
   #root-md-content {

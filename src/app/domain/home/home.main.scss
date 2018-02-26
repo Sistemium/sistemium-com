@@ -3,20 +3,6 @@
 
 .main #home {
 
-  h1 {
-    font-size: 300%;
-  }
-
-  @include responsive-only(xxs) {
-
-    .lead, &.chapter h1, .options {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-  }
-
   &.chapter {
     position: relative;
   }

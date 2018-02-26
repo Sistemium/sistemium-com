@@ -17,7 +17,11 @@
     }
   },
   "ABOUTPAGE": {
-    "PAGETEXT": "Įmonė siūlo buities prietaisus, pvz., televizorius, monitorius, spausdintuvus, šaldytuvus ir skalbykles, taip pat pagrindinius mobiliųjų telekomunikacijų produktus, pvz., išmaniuosius telefonus ir planšetinius kompiuterius. Be to, „Samsung“ yra patikima pagrindinių elektroninių komponentų, pvz., DRAM neatmintinių puslaidininkių, tiekėja. Įmonė siūlo buities prietaisus, pvz., televizorius, monitorius, spausdintuvus, šaldytuvus ir skalbykles, taip pat pagrindinius mobiliųjų telekomunikacijų produktus, pvz., išmaniuosius telefonus ir planšetinius kompiuterius. Be to, „Samsung“ yra patikima pagrindinių elektroninių komponentų, pvz., DRAM neatmintinių puslaidininkių, tiekėja."
+    "LEAD": "Pagrindiniai faktai apie įmonę",
+    "facts": {
+      "start": "Įsteigimo metai",
+      "profile": "Specializacija"
+    }
   },
   "SERVICEPAGE": {
     "LEAD": "Informacinės sistemos verslui"

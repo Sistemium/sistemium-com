@@ -46,6 +46,8 @@
       translate: _.toUpper(item.state)
     }));
 
+    onStateChange(null, $state.current);
+
     $scope.$watch('vm.lang', (nv, ov) => {
       if (nv !== ov) {
         moment.locale(nv);
@@ -53,13 +55,15 @@
       }
     });
 
-    $scope.$on('$stateChangeSuccess', (event, toState) => {
-      vm.currentState = toState.name;
-    });
+    $scope.$on('$stateChangeSuccess', onStateChange);
 
     /*
      Functions
      */
+
+    function onStateChange(event, toState) {
+      vm.currentState = toState.name;
+    }
 
     function changeState(item) {
       let toGo = _.get(item, 'state') || 'home';
