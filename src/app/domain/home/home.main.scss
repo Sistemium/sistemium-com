@@ -4,7 +4,9 @@
 .main #home {
 
   &.chapter {
-    position: relative;
+    @include responsive-only(gt-xxs) {
+      position: relative;
+    }
   }
 
   .options {

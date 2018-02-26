@@ -25,7 +25,7 @@ $border-radius-main: 5px;
 
   @include responsive-only(xxs) {
 
-    .lead, &.chapter h1, .options {
+    .lead, .chapter h1, .options {
       text-align: center;
       margin-top: 0;
       margin-bottom: 0;
