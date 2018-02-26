@@ -17,6 +17,10 @@
   },
   "SERVICEPAGE": {
     "PAGETEXT": "This is service page"
+  },
+  "HOMEPAGE": {
+    "LEAD": "Enterprise automation",
+    "LOGIN": "Customer login"
   }
 }
 

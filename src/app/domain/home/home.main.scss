@@ -1,0 +1,28 @@
+@import "main/main";
+
+.main {
+
+  .viewport {
+    padding: $padding-main * 2;
+  }
+
+  h1 {
+    font-size: 300%;
+  }
+
+  .lead {
+
+  }
+
+  .options {
+
+    display: flex;
+    justify-content: flex-end;
+
+    > .md-button:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+}

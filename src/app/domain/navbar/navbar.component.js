@@ -9,7 +9,7 @@
   };
 
   /** @ngInject */
-  function NavbarController(StyleService, $translate, $state, localStorageService, LangService, $scope, moment, $timeout) {
+  function NavbarController(StyleService, $translate, $state, localStorageService, LangService, $scope, moment) {
 
     const vm = this;
 

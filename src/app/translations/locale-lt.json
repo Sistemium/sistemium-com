@@ -17,5 +17,11 @@
   },
   "SERVICEPAGE": {
     "PAGETEXT": "Paslaugų puslapis"
+  },
+
+  "HOMEPAGE": {
+    "LEAD": "Automatizacija įmonėms",
+    "LOGIN": "Įėjimas klientams"
   }
+
 }
