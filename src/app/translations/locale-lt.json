@@ -10,7 +10,11 @@
   "CONTACTS": "Kontaktai",
   "ABOUT": "Apie",
   "CONTACTSPAGE": {
-    "INFO": "Vilnius, Kareivių g. 19"
+    "TITLE": "Sistemium UAB",
+    "LEAD": "Įmonės kontaktinis informacija",
+    "office": {
+      "address": "Z. Sierakausko g. 15A, LT-03105 Vilnius, Lietuva"
+    }
   },
   "ABOUTPAGE": {
     "PAGETEXT": "Įmonė siūlo buities prietaisus, pvz., televizorius, monitorius, spausdintuvus, šaldytuvus ir skalbykles, taip pat pagrindinius mobiliųjų telekomunikacijų produktus, pvz., išmaniuosius telefonus ir planšetinius kompiuterius. Be to, „Samsung“ yra patikima pagrindinių elektroninių komponentų, pvz., DRAM neatmintinių puslaidininkių, tiekėja. Įmonė siūlo buities prietaisus, pvz., televizorius, monitorius, spausdintuvus, šaldytuvus ir skalbykles, taip pat pagrindinius mobiliųjų telekomunikacijų produktus, pvz., išmaniuosius telefonus ir planšetinius kompiuterius. Be to, „Samsung“ yra patikima pagrindinių elektroninių komponentų, pvz., DRAM neatmintinių puslaidininkių, tiekėja."
