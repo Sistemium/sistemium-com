@@ -10,6 +10,9 @@
 
   @include responsive-only(gt-md) {
     margin-top: $margin * 2;
+    md-toolbar {
+      border-radius: $border-radius-main;
+    }
   }
 
   & > md-toolbar {
