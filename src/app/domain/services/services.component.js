@@ -12,14 +12,11 @@
 
     });
 
-  function ServicesController(moment) {
+  function ServicesController() {
 
     const vm = this;
 
     _.assign(vm, {
-
-      time: moment().get(),
-      today: moment().calendar()
 
     });
 
