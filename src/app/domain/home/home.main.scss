@@ -1,28 +1,70 @@
 @import "main/main";
+@import "mixins";
 
-.main {
-
-  .viewport {
-    padding: $padding-main * 2;
-  }
+.main #home {
 
   h1 {
     font-size: 300%;
   }
 
-  .lead {
+  @include responsive-only(xxs) {
 
+    .lead, &.chapter h1, .options {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+  }
+
+  &.chapter {
+    position: relative;
   }
 
   .options {
 
-    display: flex;
-    justify-content: flex-end;
-
-    > .md-button:last-child {
-      margin-right: 0;
+    @include responsive-only(gt-xxs) {
+      position: absolute;
+      top: $padding-main;
+      right: 0;
+      > .md-button:last-child {
+        margin-right: 0;
+      }
     }
 
+    @include responsive-only(xxs) {
+      > .md-button {
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+  }
+
+  .services {
+    md-list-item {
+      md-icon {
+
+        background-color: lighten($gray, 35%);
+        //$primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $st-blue-color;
+        //$primary-text-color;
+
+        > i.fa {
+          font-size: 80%;
+          &.fa-tablet {
+            font-size: 100%;
+          }
+        }
+
+      }
+      .md-secondary-container {
+        flex: 1;
+      }
+    }
   }
 
 }

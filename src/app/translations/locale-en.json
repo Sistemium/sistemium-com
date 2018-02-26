@@ -25,6 +25,15 @@
   "HOMEPAGE": {
     "LEAD": "Enterprise automation",
     "LOGIN": "Customer login"
+  },
+
+  "services": {
+    "businessFormation": "Business process analysis and configuration",
+    "mobileApps": "Smartphone and tablet adaptive applications",
+    "webApps": "Desktop browser applications",
+    "infrastructure": "Cloud infrastructure management",
+    "support": "Technical support and consultation"
   }
+
 }
 

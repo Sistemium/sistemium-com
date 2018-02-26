@@ -7,6 +7,19 @@ $padding-main: 10px;
   $padding: $padding-main/2;
   $margin: $padding-main;
 
+  color: $black;
+
+  .viewport {
+    padding: $padding-main * 2;
+    @include responsive-only(xxs) {
+      padding: $padding-main;
+    }
+  }
+
+  h1 {
+    color: lighten($black, 15%);
+  }
+
   #root-md-content {
     max-width: 1024px;
     margin-left: auto;
@@ -14,29 +27,9 @@ $padding-main: 10px;
   }
 
   .lead {
-    color: $gray;
+    color: darken($gray, 10%);
     line-height: 1.5;
     font-size: 120%;
-  }
-
-  root-footer {
-
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    padding: $margin;
-    font-size: 85%;
-
-    > * {
-      display: flex;
-      justify-content: center;
-      > * + * {
-        margin-left: $margin;
-      }
-
-    }
-
   }
 
   .lang-button {
@@ -54,116 +47,13 @@ $padding-main: 10px;
 
   }
 
-  root-navbar {
-
-    & > md-toolbar {
-
-      background: #ebebeb;
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-
-      padding: 0 $margin;
-
-      .md-button {
-        border-radius: 0;
-      }
-
-      .active {
-        background: lighten($gray, 30%);
-      }
-
-      .sandwich-button {
-        height: 64px;
-        margin: 0;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: flex-end;
-      }
-
-      .logo {
-
-        margin: 0;
-
-        img {
-          width: 54px;
-          height: 54px;
-          margin-right: $padding;
-        }
-
-      }
-
-      .buttons {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-
-        > .md-button {
-          min-width: 0;
-          padding-right: $margin;
-          padding-left: $margin;
-        }
-      }
-
-      .buttons {
-        flex: 1;
-
-        .sandwich-button {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center;
-        }
-
-        button {
-          margin: 0;
-          height: 64px;
-
-        }
-
-      }
-
-      md-menu {
-
-        button {
-
-          margin: 0;
-          height: 64px;
-        }
-        span {
-          vertical-align: top;
-        }
-        i {
-          vertical-align: middle;
-          margin-bottom: 2px
-        }
-
-      }
-    }
-
-  }
-
   .chapter {
-    > h1 {
+    h1 {
       margin-top: 0;
       margin-bottom: 10px;
     }
   }
 
-  md-content {
-
-    //background: white;
-
-    .viewport {
-
-      #about {
-        p {
-          text-align: justify;
-        }
-      }
-
-    }
-
-  }
 }
 
 
