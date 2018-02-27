@@ -8,34 +8,48 @@
   md-list.services
 
     md-list-item
-      md-icon.md-avatar-icon
+      md-icon.md-avatar-icon(aria-label='Business formation')
         i.fa.fa-cogs
         //.fa-stethoscope
         //i.fa.fa-object-group
       .md-list-item-text(translate='services.businessFormation')
     md-list-item
-      md-icon.md-avatar-icon
+      md-icon.md-avatar-icon(aria-label='Mobile apps development')
         i.fa.fa-tablet
       .md-list-item-text(translate='services.mobileApps')
     md-list-item
-      md-icon.md-avatar-icon
+      md-icon.md-avatar-icon(aria-label='Desktop web apps development')
         i.fa.fa-desktop
       //i.fa.fa-chrome
       //i.fa.fa.fa-firefox
       .md-list-item-text(translate='services.webApps')
     md-list-item
-      md-icon.md-avatar-icon
+      md-icon.md-avatar-icon(aria-label='Cloud-based infrastructure')
         i.fa.fa-server
       //i.fa.fa-database
       //i.fa.fa-hdd-o
       .md-list-item-text(translate='services.infrastructure')
     md-list-item
-      md-icon.md-avatar-icon
+      md-icon.md-avatar-icon(aria-label='First-class customer support')
         i.fa.fa-users
       .md-list-item-text(translate='services.support')
 
   .options
 
-    md-button.md-raised.detailed(translate='HOMEPAGE.options.learn' ui-sref='services')
-    md-button.md-raised.join(translate='HOMEPAGE.options.contact' ui-sref='contacts')
-    md-button.login.md-primary.md-raised(translate='HOMEPAGE.options.login')
+    md-button.md-raised.detailed(
+    aria-label='Learn more'
+    translate='HOMEPAGE.options.learn'
+    ui-sref='services'
+    )
+
+    md-button.md-raised.join(
+    aria-label='Contact us'
+    translate='HOMEPAGE.options.contact'
+    ui-sref='contacts'
+    )
+
+    md-button.login.md-primary.md-raised(
+    aria-label='User sign in'
+    translate='HOMEPAGE.options.login'
+    ui-sref='login'
+    )
