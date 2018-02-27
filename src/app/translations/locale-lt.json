@@ -12,7 +12,7 @@
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
     "LEAD": "Įmonės kontaktinis informacija",
-    "office": {
+    "options": {
       "address": "Z. Sierakausko g. 15A, LT-03105 Vilnius, Lietuva"
     }
   },
