@@ -19,8 +19,8 @@
     });
 
     $translateProvider
-      .preferredLanguage('en')
-      .fallbackLanguage(['en', 'lt', 'ru'])
+      .preferredLanguage('ru')
+      .fallbackLanguage(['ru', 'en', 'lt'])
       .useLocalStorage()
       .useSanitizeValueStrategy('escape');
 
