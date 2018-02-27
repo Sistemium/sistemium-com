@@ -13,7 +13,7 @@
 
     });
 
-  function LoginController(phaService, $scope, saEtc, $mdToast, $translate) {
+  function LoginController(phaService, $scope, saEtc, $mdToast, $translate, localStorageService) {
 
     const vm = this;
 
@@ -40,7 +40,8 @@
             .position('top right')
             .parent(el)
             .hideDelay(4000)
-          ));
+          ))
+        .catch(_.noop);
 
     }
 
@@ -85,11 +86,16 @@
           console.info('Auth success', res);
           vm.state = 'authorized';
           showToast('LOGINPAGE.messages.welcome', `, ${res.account.name}!`);
+          return afterLogin(res);
         })
         .catch(() => {
           showToast('LOGINPAGE.errors.invalidSms');
         });
 
+    }
+
+    function afterLogin(auth) {
+      localStorageService.set('authorization', auth.accessToken);
     }
 
   }
