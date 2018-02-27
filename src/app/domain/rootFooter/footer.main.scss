@@ -12,6 +12,7 @@
   bottom: 0;
   right: 0;
   left: 0;
+
   text-align: center;
   padding: $margin;
   font-size: 85%;
@@ -28,7 +29,6 @@
 
   @include responsive-only(lt-sm) {
 
-    background: $gray-background;
     padding: 5px;
 
   }

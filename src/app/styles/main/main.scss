@@ -14,7 +14,10 @@ $border-radius-main: 5px;
   .viewport {
 
     padding: $padding-main * 2;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 10;
+    background: $white;
 
     @include responsive-only(xxs) {
       padding: $padding-main;
