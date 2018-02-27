@@ -12,20 +12,38 @@
   .options {
 
     @include responsive-only(gt-xxs) {
-      position: absolute;
-      top: $padding-main;
-      right: 0;
-      > .md-button:last-child {
+
+      text-align: right;
+
+      .join {
         margin-right: 0;
       }
+
+      .login {
+        position: absolute;
+        top: $padding-main;
+        right: 0;
+        margin-right: 0;
+      }
+
+      > .md-button:last-child {
+      }
+
     }
 
     @include responsive-only(xxs) {
-      margin-top: 5px;
+
+      margin-top: 0;
+
       > .md-button {
         width: 100%;
-        margin: auto;
+        margin: 2px auto;
+        box-shadow: none;
+        &:not(.md-primary) {
+          border: solid 1px $gray-borders-color;
+        }
       }
+
     }
 
   }
@@ -37,12 +55,11 @@
       md-icon {
 
         background-color: lighten($gray, 35%);
-        //$primary-color;
+
         display: flex;
         justify-content: center;
         align-items: center;
         color: $st-blue-color;
-        //$primary-text-color;
 
         > i.fa {
           font-size: 80%;

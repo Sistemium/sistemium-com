@@ -5,10 +5,14 @@
   $padding: $padding-main/2;
   $margin: $padding-main;
 
-  position: absolute;
+  box-sizing: border-box;
+  background: $white;
+
+  position: fixed;
   bottom: 0;
+  right: 0;
+  left: 0;
   text-align: center;
-  width: 100%;
   padding: $margin;
   font-size: 85%;
   color: $gray;
@@ -19,6 +23,13 @@
     > * + * {
       margin-left: $margin;
     }
+
+  }
+
+  @include responsive-only(lt-sm) {
+
+    background: $gray-background;
+    padding: 5px;
 
   }
 

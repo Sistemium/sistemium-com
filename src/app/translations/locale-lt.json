@@ -29,7 +29,11 @@
 
   "HOMEPAGE": {
     "LEAD": "Automatizacija įmonėms",
-    "LOGIN": "Įėjimas klientams"
+    "options": {
+      "login": "Įėjimas klientams",
+      "contact": "Sususiekite su mumis",
+      "learn": "Daugiau apie paslaugas"
+    }
   }
 
 }

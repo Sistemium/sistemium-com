@@ -12,10 +12,14 @@ $border-radius-main: 5px;
   color: $black;
 
   .viewport {
+
     padding: $padding-main * 2;
+    margin-bottom: 15px;
+
     @include responsive-only(xxs) {
       padding: $padding-main;
     }
+
   }
 
   h1 {
@@ -23,15 +27,6 @@ $border-radius-main: 5px;
     color: lighten($black, 15%);
   }
 
-  @include responsive-only(xxs) {
-
-    .lead, .chapter h1, .options {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-  }
 
   #root-md-content {
     max-width: $screen-md;
@@ -45,26 +40,34 @@ $border-radius-main: 5px;
     font-size: 120%;
   }
 
-  .lang-button {
-
-    p {
-      float: left;
-    }
-
-    md-icon {
-      float: right;
-      height: 35px;
-      width: 25px;
-      margin: 0;
-    }
-
-  }
-
   .chapter {
     h1 {
       margin-top: 0;
       margin-bottom: 10px;
     }
+  }
+
+  @include responsive-only(xxs) {
+
+    .chapter > h1 {
+      font-size: 200%;
+      margin-bottom: 8px;
+    }
+
+    .md-list-item-text {
+      font-size: 90%;
+    }
+    md-list-item .md-avatar-icon {
+      margin-top: $border-radius-main;
+      margin-bottom: $border-radius-main;
+    }
+
+    .lead, .chapter h1 {
+      text-align: center;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+
   }
 
 }

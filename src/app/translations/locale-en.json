@@ -28,7 +28,11 @@
   },
   "HOMEPAGE": {
     "LEAD": "Enterprise automation",
-    "LOGIN": "Customer login"
+    "options": {
+      "login": "Customer login",
+      "contact": "Contact us",
+      "learn": "Learn more"
+    }
   },
 
   "services": {
