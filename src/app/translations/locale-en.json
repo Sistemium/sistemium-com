@@ -12,8 +12,9 @@
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
     "LEAD": "Company contact info",
-    "office": {
-      "address": "Lithuania, LT-03105 Vilnius, Z. Sierakausko str. 15A"
+    "options": {
+      "address": "Lithuania, LT-03105 Vilnius, Z. Sierakausko str. 15A",
+      "phone": "+370(636)50-065"
     }
   },
   "ABOUTPAGE": {

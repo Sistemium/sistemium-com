@@ -4,5 +4,26 @@
 
   p.lead(translate='CONTACTSPAGE.LEAD')
 
+  md-list.options
 
-  .address(translate='CONTACTSPAGE.office.address')
+    md-list-item.address
+      md-icon
+        i.material-icons place
+      p(translate='CONTACTSPAGE.options.address')
+
+    md-list-item.phone
+      md-icon
+        i.material-icons phone
+      p
+        a(
+        href='tel:{{ "CONTACTSPAGE.options.phone" | translate }}'
+        translate='CONTACTSPAGE.options.phone'
+        )
+
+    md-list-item.email
+      md-icon
+        i.material-icons email
+      p
+        a(
+        href='mailto:uab@sistemium.com'
+        ) uab@sistemium.com
