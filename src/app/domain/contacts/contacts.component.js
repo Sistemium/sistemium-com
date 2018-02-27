@@ -17,7 +17,9 @@
 
     const vm = this;
 
-    _.assign(vm, {});
+    _.assign(vm, {
+      eAddr: 'uab' + '@' + 'sistemium.com'
+    });
 
   }
 
