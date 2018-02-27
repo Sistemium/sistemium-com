@@ -13,7 +13,7 @@
 
     });
 
-  function LoginController(phaService, $scope, saEtc, $mdToast, $translate, localStorageService) {
+  function LoginController(phaService, $scope, saEtc, $mdToast, $translate, AuthService, $state) {
 
     const vm = this;
 
@@ -85,7 +85,6 @@
         .then(res => {
           console.info('Auth success', res);
           vm.state = 'authorized';
-          showToast('LOGINPAGE.messages.welcome', `, ${res.account.name}!`);
           return afterLogin(res);
         })
         .catch(() => {
@@ -95,7 +94,11 @@
     }
 
     function afterLogin(auth) {
-      localStorageService.set('authorization', auth.accessToken);
+      AuthService.saveToken(auth.accessToken);
+      return AuthService.init()
+        .then(() => {
+          $state.go('home');
+        });
     }
 
   }

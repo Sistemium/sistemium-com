@@ -43,7 +43,7 @@
         )
 
     md-button.md-raised.md-primary(
-    ng-disabled='vm.busy || loginForm.$invalid'
+    ng-disabled='vm.busy || loginForm.$invalid || vm.state === "authorized"'
     aria-label='Submit data'
     ng-click='vm.submitClick()'
     translate='LOGINPAGE.options.submit'

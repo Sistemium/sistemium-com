@@ -5,11 +5,11 @@
   angular.module('stcom')
     .service('phaService', phaService);
 
-  function phaService($http, $rootScope) {
+  function phaService($http, $rootScope, $q) {
 
     const url = 'https://api.sistemium.com/pha/auth';
     const logoffUrl = 'https://api.sistemium.com/pha/logoff';
-    const rolesUrl = 'https://api.sistemium.com/pha/roles';
+    const rolesUrl = 'https://api.sistemium.com/pha/rolestest';
 
     const me = this;
 
@@ -45,6 +45,11 @@
     }
 
     function getRoles(token) {
+
+      if (!token) {
+        return $q.reject(401);
+      }
+
       return $http.get(rolesUrl, {
         headers: {
           Authorization: token

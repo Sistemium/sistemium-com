@@ -17,8 +17,13 @@
 
   /** @ngInject */
 
-  function runBlock($log) {
+  function runBlock($log, AuthService) {
+
+    AuthService.init()
+      .catch(_.noop);
+
     $log.debug('runBlock end');
+
   }
 
   function makeMeasureDigest($window) {
@@ -26,7 +31,7 @@
       angular.element($window.document.querySelector('[ng-app]'))
         .injector()
         .invoke(function ($rootScope) {
-          var a = performance.now();
+          let a = performance.now();
           $rootScope.$apply();
           console.log('Digest length:', Math.round(performance.now() - a));
         });
