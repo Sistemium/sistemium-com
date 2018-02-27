@@ -36,6 +36,25 @@
     }
   },
 
+  "LOGINPAGE": {
+    "LEAD": "User authorization",
+    "options": {
+      "phone": "Mobile number",
+      "submit": "Submit",
+      "sms": "SMS code"
+    },
+    "errors": {
+      "invalidSms": "Wrong SMS code",
+      "unknownPhone": "Unknown phone number",
+      "phoneRequired": "Phone number is required",
+      "phoneMask": "Phone number must match the mask"
+    },
+    "messages": {
+      "smsSent": "An SMS with secret code is sent",
+      "welcome": "Welcome"
+    }
+  },
+
   "services": {
     "businessFormation": "Business process analysis and configuration",
     "mobileApps": "Smartphone and tablet adaptive applications",

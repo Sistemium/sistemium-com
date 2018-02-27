@@ -1,0 +1,50 @@
+#login.chapter
+
+  h1 Sistemium
+
+  p.lead(translate='LOGINPAGE.LEAD')
+
+  form(name='loginForm')
+
+    fieldset
+
+      md-input-container
+
+        label(translate='LOGINPAGE.options.phone')
+
+        input(
+        ng-disabled='vm.busy || vm.state !== "phone"'
+        ng-model='vm.phone'
+        name='phone'
+        ui-mask="+7 (999) 999-9999"
+        placeholder
+        ui-mask-placeholder
+        ui-mask-placeholder-char="_"
+        required
+        autofocus
+        autocomplete='off'
+        sa-enter-key='vm.submitClick()'
+        )
+
+        .messages(ng-messages='loginForm.phone.$error')
+          .message(ng-message='required' translate='LOGINPAGE.errors.phoneRequired')
+          .message(ng-message-exp='["parse", "mask"]' translate='LOGINPAGE.errors.phoneMask')
+
+      md-input-container(ng-if='vm.state === "sms"')
+        label(translate='LOGINPAGE.options.sms')
+        input#login-sms-input(
+        ng-disabled='vm.busy || vm.state !== "sms"'
+        ng-model='vm.sms'
+        placeholder='{{LOGINPAGE.options.sms}}'
+        required
+        autocomplete='off'
+        ng-pattern='/[0-9]{4,6}/'
+        sa-enter-key='vm.submitClick()'
+        )
+
+    md-button.md-raised.md-primary(
+    ng-disabled='vm.busy || loginForm.$invalid'
+    aria-label='Submit data'
+    ng-click='vm.submitClick()'
+    translate='LOGINPAGE.options.submit'
+    )

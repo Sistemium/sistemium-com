@@ -11,6 +11,21 @@ $border-radius-main: 5px;
 
   color: $black;
 
+  md-toast {
+
+    bottom: unset;
+
+    @include responsive-only(gt-xxs) {
+      left: unset;
+      width: auto;
+    }
+
+    &.md-default-theme .md-toast-content{
+      background: $st-yellow-color;
+      color: $st-blue-color;
+    }
+  }
+
   .viewport {
 
     padding: $padding-main * 2;

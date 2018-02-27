@@ -27,6 +27,24 @@
     "LEAD": "Informacinės sistemos verslui"
   },
 
+  "LOGINPAGE": {
+    "LEAD": "Vartotojo autorizacija",
+    "options": {
+      "phone": "Mobilaus telefono numeris",
+      "submit": "Pateikti"
+    },
+    "errors": {
+      "invalidSms": "Neteisingas SMS kodas",
+      "unknownPhone": "Nežinomas telefono numeris",
+      "phoneRequired": "Telefono numeris privalomas",
+      "phoneMask": "Telefono numeris turi atitikti kaukę"
+    },
+    "messages": {
+      "smsSent": "An SMS with secret code is sent",
+      "welcome": "Labas"
+    }
+  },
+
   "HOMEPAGE": {
     "LEAD": "Automatizacija įmonėms",
     "options": {

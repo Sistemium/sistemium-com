@@ -1,0 +1,58 @@
+@import "main/main";
+
+.main #login {
+
+  position: relative;
+
+  form {
+    text-align: right;
+    label {
+      text-align: left;
+    }
+  }
+
+  fieldset {
+
+    padding: $padding-main * 2 $padding-main 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    md-input-container {
+
+
+      @include responsive-only(gt-xxs) {
+        margin-left: auto;
+        min-width: 300px;
+        max-width: 300px;
+      }
+
+    }
+
+    .md-button {
+      min-width: 300px;
+    }
+
+  }
+
+  @include responsive-only(xxs) {
+
+    fieldset {
+      padding: $padding-main * 2 0 0;
+    }
+
+    md-input-container {
+      width: 100%;
+    }
+
+    .md-button {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+
+  }
+
+}
