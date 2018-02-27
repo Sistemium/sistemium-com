@@ -16,10 +16,10 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar
 
     md-menu.sandwich-button(show-xs hide)
       md-button(
-      aria-label='Choose language'
+      aria-label='Menu'
       ng-click='vm.openMenu($mdMenu, $event)'
       )
-        i.material-icons storage
+        i.material-icons menu
 
       md-menu-content(width='3')
         md-menu-item(ng-repeat='item in vm.items track by item.state')

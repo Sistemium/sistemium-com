@@ -67,20 +67,37 @@
 
     }
 
+    md-menu.lang {
+
+      @include responsive-only(lt-sm) {
+        flex: 1;
+        text-align: right;
+      }
+
+    }
+
     .buttons {
+
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
+
+      flex: 1;
 
       > .md-button {
         min-width: 0;
         padding-right: $margin;
         padding-left: $margin;
       }
-    }
 
-    .buttons {
-      flex: 1;
+      @include responsive-only(lt-sm) {
+        order: 2;
+        flex: none;
+        button {
+          min-width: 50px;
+        }
+      }
+
 
       .sandwich-button {
         display: flex;
