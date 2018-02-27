@@ -17,12 +17,12 @@
 
   /** @ngInject */
 
-  function runBlock($log, AuthService) {
+  function runBlock(AuthService) {
 
     AuthService.init()
       .catch(_.noop);
 
-    $log.debug('runBlock end');
+    // $log.debug('runBlock end');
 
   }
 

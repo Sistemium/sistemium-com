@@ -6,7 +6,6 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar#root-navbar
   .buttons
 
     md-button(
-    hide-xs
     ng-repeat='item in vm.items track by item.state'
     translate='{{ item.translate }}'
     aria-label='{{ item.state }}'
@@ -14,7 +13,7 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar#root-navbar
     ng-class='{active: item.state === vm.currentState}'
     )
 
-    md-menu.sandwich-button(show-xs hide)
+    md-menu.sandwich-button
       md-button(
       aria-label='Menu'
       ng-click='vm.openMenu($mdMenu, $event)'

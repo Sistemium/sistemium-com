@@ -69,7 +69,7 @@
 
     md-menu.lang {
 
-      @include responsive-only(lt-sm) {
+      @include responsive-only(xxs) {
         flex: 1;
         text-align: right;
       }
@@ -85,12 +85,17 @@
       flex: 1;
 
       > .md-button {
+
+        @include responsive-only(xxs) {
+         display: none;
+        }
+
         min-width: 0;
         padding-right: $margin;
         padding-left: $margin;
       }
 
-      @include responsive-only(lt-sm) {
+      @include responsive-only(xxs) {
         order: 2;
         flex: none;
         button {
@@ -100,6 +105,9 @@
 
 
       .sandwich-button {
+        @include responsive-only(gt-xxs) {
+          display: none;
+        }
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
