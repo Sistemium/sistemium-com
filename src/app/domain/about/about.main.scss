@@ -1,0 +1,30 @@
+@import "main/main";
+
+.main #about {
+
+  md-list {
+    @include responsive-only(gt-xxs) {
+      padding-top: 0;
+    }
+  }
+
+  md-list-item {
+
+    &, &:before {
+      min-height: 0;
+    }
+
+    padding: 0;
+    margin: 10px 0;
+
+    strong {
+      text-align: right;
+      margin-right: $padding-main;
+    }
+
+    strong:after {
+      content: ':';
+    }
+
+  }
+}

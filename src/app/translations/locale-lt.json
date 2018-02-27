@@ -23,7 +23,13 @@
     "LEAD": "Pagrindiniai faktai apie įmonę",
     "facts": {
       "start": "Įsteigimo metai",
-      "profile": "Specializacija"
+      "profile": "Specializacija",
+      "profile_details": "Informacinės technologijos, programinė įranga kaip paslauga",
+      "vatID": "VAT numėris",
+      "legalAddress": "Juridinio asmens adresas",
+      "legalID": "Įmonės kodas",
+      "director": "Direktorius",
+      "directorName": "Aleksandras Levin"
     }
   },
   "SERVICEPAGE": {
