@@ -12,7 +12,9 @@
     });
 
   /** @ngInject */
-  function NavbarController(StyleService, $translate, $state, localStorageService, LangService, $scope, moment) {
+  function NavbarController(StyleService, $translate, $state,
+                            localStorageService, LangService, $scope, moment,
+                            AuthService) {
 
     const vm = this;
 
@@ -57,9 +59,22 @@
 
     $scope.$on('$stateChangeSuccess', onStateChange);
 
+    $scope.$watch(() => AuthService.isAuthorized(), onAuth);
+
     /*
      Functions
      */
+
+    function onAuth(res) {
+
+      if (res && !vm.isAuthorized) {
+        let state = 'profile';
+        vm.items.push({state, icon: 'account_circle', translate: _.upperCase(state)});
+      }
+
+      vm.isAuthorized = !!res;
+
+    }
 
     function onStateChange(event, toState) {
       vm.currentState = toState.name;

@@ -7,11 +7,12 @@ md-toolbar.toolbar-fixed-top.md-menu-toolbar#root-navbar
 
     md-button(
     ng-repeat='item in vm.items track by item.state'
-    translate='{{ item.translate }}'
     aria-label='{{ item.state }}'
     ng-click='vm.changeState(item)'
     ng-class='{active: item.state === vm.currentState}'
     )
+      span(ng-if='!item.icon' translate='{{item.translate}}')
+      i.material-icons(ng-if='item.icon') {{ item.icon }}
 
     md-menu.sandwich-button
       md-button(

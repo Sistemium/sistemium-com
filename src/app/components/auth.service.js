@@ -4,6 +4,8 @@
 
   function AuthService(localStorageService, phaService, ToastService, $q) {
 
+    let authCached = false;
+
     function loadToken() {
       return localStorageService.get('authorization');
     }
@@ -23,6 +25,7 @@
       return phaService.getRoles(token)
         .then(res => {
           console.warn('Authorized', res);
+          authCached = res;
           return res;
         });
 
@@ -36,7 +39,8 @@
 
       return checkAuth()
         .then(auth => {
-          ToastService.success('LOGINPAGE.messages.welcome', `, ${auth.account.name}!`);
+          ToastService.success('LOGINPAGE.messages.welcome', `, ${auth.account.name}!`, {timeout: 1000});
+          return auth;
         })
         .catch(err => {
 
@@ -47,13 +51,31 @@
             deleteToken();
           }
 
+          return $q.reject('Not authorized')
+
         });
 
     }
 
+    function roles() {
+      return authCached && authCached.roles;
+    }
+
+    function account() {
+      return authCached && authCached.account;
+    }
+
+    function isAuthorized(role) {
+      let allRoles = roles();
+      return allRoles && (!role || allRoles[role]);
+    }
+
     return {
       init,
-      saveToken
+      saveToken,
+      roles,
+      account,
+      isAuthorized
     };
 
   }

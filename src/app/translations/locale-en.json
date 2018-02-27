@@ -6,9 +6,12 @@
     "dark": "Dark",
     "main": "Main"
   },
+
   "SERVICES": "Services",
   "CONTACTS": "Contacts",
   "ABOUT": "About",
+  "PROFILE": "Profile",
+
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
     "LEAD": "Company contact info",
@@ -53,6 +56,10 @@
       "smsSent": "An SMS with secret code is sent",
       "welcome": "Welcome"
     }
+  },
+
+  "PROFILEPAGE": {
+    "LEAD": "User profile"
   },
 
   "services": {

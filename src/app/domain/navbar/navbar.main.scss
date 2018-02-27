@@ -43,10 +43,6 @@
       border-radius: 0;
     }
 
-    .active {
-      background: lighten($gray, 30%);
-    }
-
     .sandwich-button {
       height: 64px;
       margin: 0;
@@ -93,6 +89,13 @@
         min-width: 0;
         padding-right: $margin;
         padding-left: $margin;
+
+        i {
+          vertical-align: middle;
+          margin-bottom: 2px;
+          font-size: 26px;
+        }
+
       }
 
       @include responsive-only(xxs) {

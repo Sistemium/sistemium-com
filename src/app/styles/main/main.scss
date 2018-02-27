@@ -11,6 +11,10 @@ $border-radius-main: 5px;
 
   color: $black;
 
+  .md-button.active {
+    background: lighten($gray, 30%);
+  }
+
   md-toast {
 
     bottom: unset;

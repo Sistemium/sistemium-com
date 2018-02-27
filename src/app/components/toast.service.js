@@ -13,7 +13,7 @@
       warn: showToast
     };
 
-    function showToast(code, suffix = '') {
+    function showToast(code, suffix = '', config = {}) {
 
       let el = saEtc.getElementById('root-viewport');
 
@@ -24,7 +24,7 @@
             .textContent(`${text}${suffix}`)
             .position('top right')
             .parent(el)
-            .hideDelay(4000)
+            .hideDelay(config.timeout || 4000)
         ))
         .catch(_.noop);
 

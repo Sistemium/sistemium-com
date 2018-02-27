@@ -22,7 +22,11 @@
       submitClick
     });
 
-    // saEtc.focusElementById('login-phone-input', 500);
+    saEtc.focusElementById('login-phone-input', 500);
+
+    if (AuthService.account()) {
+      $state.go('profile');
+    }
 
     /*
     Functions
@@ -97,7 +101,7 @@
       AuthService.saveToken(auth.accessToken);
       return AuthService.init()
         .then(() => {
-          $state.go('home');
+          $state.go('profile');
         });
     }
 

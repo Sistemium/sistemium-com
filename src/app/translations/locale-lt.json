@@ -6,9 +6,12 @@
     "dark": "Tamsus",
     "main": "Pagrindinis"
   },
+
   "SERVICES": "Paslaugos",
   "CONTACTS": "Kontaktai",
   "ABOUT": "Apie",
+  "PROFILE": "Savitarna",
+
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
     "LEAD": "Įmonės kontaktinis informacija",
@@ -43,6 +46,10 @@
       "smsSent": "An SMS with secret code is sent",
       "welcome": "Labas"
     }
+  },
+
+  "PROFILEPAGE": {
+    "LEAD": "Vartotojo profilis"
   },
 
   "HOMEPAGE": {

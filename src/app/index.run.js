@@ -6,21 +6,20 @@
     .module('stcom')
     .run(runBlock)
     .run(makeMeasureDigest)
-    .run(function (amMoment, LangService, localStorageService) {
+    .run(function (amMoment, LangService) {
 
       let localeLanguage = LangService.getLang();
       amMoment.changeLocale(localeLanguage);
-      if (!localStorageService.get('lang'))
-        localStorageService.set('lang', 'en');
+      // if (!localStorageService.get('lang'))
+      //   localStorageService.set('lang', 'ru');
 
     });
 
   /** @ngInject */
 
-  function runBlock(AuthService) {
+  function runBlock(AuthService, routerAuth) {
 
-    AuthService.init()
-      .catch(_.noop);
+    routerAuth.init(AuthService.init());
 
     // $log.debug('runBlock end');
 

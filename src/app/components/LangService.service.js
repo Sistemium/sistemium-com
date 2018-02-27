@@ -5,7 +5,7 @@
   function LangService(localStorageService) {
 
     function getLang() {
-      return localStorageService.get('lang') || 'en';
+      return localStorageService.get('lang') || 'ru';
     }
 
     function availableLanguages() {
