@@ -1,3 +1,15 @@
 .chapter#profile
 
+  h1 {{ vm.account.name }}
+
   p.lead(translate='PROFILEPAGE.LEAD')
+
+  md-list.roles
+    md-list-item(ng-repeat='role in vm.roles | orderBy: "code" track by role.code')
+
+      md-icon
+        i.material-icons check
+
+      p
+        strong {{ role.code }}
+        span(ng-if='role.value !==true') : {{ role.value | json }}

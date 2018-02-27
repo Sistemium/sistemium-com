@@ -16,10 +16,15 @@
 
     const vm = this;
 
-    _.assign(vm, {
-      account: AuthService.account(),
-      roles: AuthService.roles()
-    });
+    AuthService.checkAuth()
+      .then(() =>{
+        _.assign(vm, {
+          account: AuthService.account(),
+          roles: _.map(AuthService.roles(), (value, code) => {
+            return {code, value};
+          })
+        });
+      });
 
   }
 

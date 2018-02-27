@@ -2,4 +2,19 @@
 
 .main #profile {
 
+  md-list.roles {
+
+    $padding: $padding-main/2;
+    md-list-item, md-list-item:before {
+      min-height: 34px;
+    }
+
+    md-icon {
+      margin-top: $padding;
+      margin-bottom: $padding;
+      color: green;
+    }
+
+  }
+
 }

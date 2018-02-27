@@ -45,7 +45,7 @@ $border-radius-main: 5px;
   }
 
   h1 {
-    font-size: 300%;
+    font-size: 250%;
     color: lighten($black, 15%);
   }
 
@@ -79,6 +79,7 @@ $border-radius-main: 5px;
     .md-list-item-text {
       font-size: 90%;
     }
+
     md-list-item .md-avatar-icon {
       margin-top: $border-radius-main;
       margin-bottom: $border-radius-main;

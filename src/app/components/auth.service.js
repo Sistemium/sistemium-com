@@ -22,12 +22,7 @@
 
       let token = loadToken();
 
-      return phaService.getRoles(token)
-        .then(res => {
-          console.warn('Authorized', res);
-          authCached = res;
-          return res;
-        });
+      return phaService.getRoles(token);
 
     }
 
@@ -39,6 +34,8 @@
 
       return checkAuth()
         .then(auth => {
+          console.info('Authorized', auth);
+          authCached = auth;
           ToastService.success('LOGINPAGE.messages.welcome', `, ${auth.account.name}!`, {timeout: 1000});
           return auth;
         })
@@ -71,6 +68,7 @@
     }
 
     return {
+      checkAuth,
       init,
       saveToken,
       roles,
