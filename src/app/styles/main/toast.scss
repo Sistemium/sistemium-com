@@ -1,0 +1,23 @@
+@import "main";
+
+.main {
+
+  md-toast {
+
+    bottom: unset;
+    top: 70px;
+
+    @include responsive-only(gt-xxs) {
+      left: unset;
+      width: auto;
+      right: 20px;
+    }
+
+    &.md-default-theme .md-toast-content{
+      background: $st-yellow-color;
+      color: $st-blue-color;
+    }
+
+  }
+
+}
