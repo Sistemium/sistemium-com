@@ -30,8 +30,8 @@ $dark-gray-main: darken($gray, 20%);
 
   .lead {
     color: $dark-gray-main;
-    line-height: 1.3;
-    font-size: 130%;
+    line-height: 1.25;
+    font-size: 140%;
   }
 
   .chapter {
@@ -72,6 +72,8 @@ $dark-gray-main: darken($gray, 20%);
 
     .lead {
       margin-top: 5px;
+      font-size: 120%;
+      //font-weight: bold;
     }
 
   }
