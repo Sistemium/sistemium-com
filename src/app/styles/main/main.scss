@@ -3,6 +3,7 @@
 
 $padding-main: 10px;
 $border-radius-main: 5px;
+$dark-gray-main: darken($gray, 20%);
 
 .main {
 
@@ -10,6 +11,10 @@ $border-radius-main: 5px;
   $margin: $padding-main;
 
   color: $black;
+
+  #root-viewport {
+    box-sizing: border-box;
+  }
 
   .md-button.active {
     background: lighten($gray, 30%);
@@ -22,31 +27,50 @@ $border-radius-main: 5px;
     @include responsive-only(gt-xxs) {
       left: unset;
       width: auto;
+      right: 20px;
     }
 
     &.md-default-theme .md-toast-content{
       background: $st-yellow-color;
       color: $st-blue-color;
     }
+
   }
 
   .viewport {
 
     padding: $padding-main * 2;
+    padding-bottom: $padding-main * 3;
     margin-bottom: 25px;
     position: relative;
     z-index: 10;
-    background: $white;
+
+    > * {
+      display: block;
+      background: $white;
+    }
 
     @include responsive-only(xxs) {
-      padding: $padding-main;
+      padding: $padding-main $padding-main 25px;
     }
 
   }
 
-  h1 {
-    font-size: 250%;
+  h1, h2, h3, h4, h5 {
     color: lighten($black, 15%);
+  }
+
+  h1 {
+    font-size: 230%;
+  }
+
+  h2 {
+    font-size: 120%;
+    background-color: $gray-background;
+    padding: $padding;
+    @include responsive-only(gt-xs) {
+      //text-align: right;
+    }
   }
 
 
@@ -57,16 +81,23 @@ $border-radius-main: 5px;
   }
 
   .lead {
-    color: darken($gray, 15%);
+    color: $dark-gray-main;
     line-height: 1.5;
     font-size: 120%;
   }
 
   .chapter {
+
     h1 {
       margin-top: 0;
       margin-bottom: 10px;
     }
+
+    > p.text {
+      color: $dark-gray-main;
+      text-align: justify;
+    }
+
   }
 
   @include responsive-only(xxs) {
