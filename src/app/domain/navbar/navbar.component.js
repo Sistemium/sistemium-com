@@ -34,7 +34,8 @@
       items: [
         {state: 'services'},
         {state: 'contacts'},
-        {state: 'about'}
+        {state: 'about'},
+        {state: 'login', icon: 'vpn_key'}
       ],
 
       currentState: null,
@@ -68,6 +69,7 @@
     function onAuth(res) {
 
       if (res && !vm.isAuthorized) {
+        _.remove(vm.items, {state: 'login'});
         let state = 'profile';
         vm.items.push({state, icon: 'account_circle', translate: _.upperCase(state)});
       }

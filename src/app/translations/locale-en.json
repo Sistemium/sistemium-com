@@ -11,6 +11,7 @@
   "CONTACTS": "Contacts",
   "ABOUT": "About",
   "PROFILE": "Profile",
+  "LOGIN": "Sign in",
 
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
@@ -70,8 +71,8 @@
 
   "services": {
     "businessFormation": "Business process analysis and configuration",
-    "mobileApps": "Smartphone and tablet adaptive applications",
-    "webApps": "Desktop browser applications",
+    "mobileApps": "Specialized smartphone and tablet applications",
+    "webApps": "Adaptive desktop browser applications",
     "infrastructure": "Cloud infrastructure management",
     "support": "Technical support and consulting"
   }
