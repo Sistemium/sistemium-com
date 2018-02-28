@@ -13,6 +13,9 @@
   "PROFILE": "Profile",
   "LOGIN": "Sign in",
 
+  "YES": "Yes",
+  "NO": "No",
+
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
     "LEAD": "Company contact info",
@@ -66,7 +69,11 @@
   },
 
   "PROFILEPAGE": {
-    "LEAD": "User profile"
+    "LEAD": "User profile",
+    "options": {
+      "logoff": "Sign out",
+      "logoffConfirm": "Would you really like to sign out?"
+    }
   },
 
   "services": {

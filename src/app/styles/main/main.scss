@@ -65,7 +65,7 @@ $dark-gray-main: darken($gray, 20%);
     font-size: 230%;
   }
 
-  h2 {
+  .chapter > h2 {
     font-size: 120%;
     background-color: $gray-background;
     padding: $padding;

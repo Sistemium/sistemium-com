@@ -2,6 +2,8 @@
 
 .main #profile {
 
+  position: relative;
+
   md-list.roles {
 
     $padding: $padding-main/2;
@@ -13,6 +15,60 @@
       margin-top: $padding;
       margin-bottom: $padding;
       color: green;
+    }
+
+  }
+
+
+  @include responsive-only(gt-xxs) {
+
+    .lead {
+      float: left;
+    }
+
+    > .options {
+
+      float: right;
+
+      & + * {
+        clear: both;
+      }
+
+    }
+
+  }
+
+  > .options {
+
+    > *:last-child {
+      margin-right: 0;
+    }
+
+    .logoff {
+
+      min-width: 0;
+
+      i {
+        display: none;
+        vertical-align: middle;
+        margin-bottom: 2px;
+        font-size: 26px;
+      }
+
+      @include responsive-only(xxs) {
+
+        position: absolute;
+        right: 0;
+        top: 33px;
+        box-shadow: none;
+
+        i {
+          display: inline-block;
+        }
+        span {
+          display: none;
+        }
+      }
     }
 
   }

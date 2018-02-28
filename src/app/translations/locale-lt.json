@@ -13,6 +13,9 @@
   "PROFILE": "Savitarna",
   "LOGIN": "Prisijungti",
 
+  "YES": "Taip",
+  "NO": "Ne",
+
   "CONTACTSPAGE": {
     "TITLE": "Sistemium UAB",
     "LEAD": "Įmonės kontaktinis informacija",
@@ -56,7 +59,11 @@
   },
 
   "PROFILEPAGE": {
-    "LEAD": "Vartotojo profilis"
+    "LEAD": "Vartotojo profilis",
+    "options": {
+      "logoff": "Atsijungti",
+      "logoffConfirm": "Ar tikrai norėtute atsijungti iš Sistemos?"
+    }
   },
 
   "HOMEPAGE": {

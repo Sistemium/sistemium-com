@@ -19,10 +19,9 @@
 
     _.assign(vm, {
       state: 'phone',
-      submitClick
+      submitClick,
+      $onInit
     });
-
-    saEtc.focusElementById('login-phone-input', 500);
 
     if (AuthService.account()) {
       $state.go('profile');
@@ -32,9 +31,13 @@
     Functions
      */
 
+    function $onInit() {
+      saEtc.focusElementById('login-phone-input', 500);
+    }
+
     function showToast(code, suffix = '') {
 
-      let el = saEtc.getElementById('login');
+      let el = saEtc.getElementById('root-md-content');
 
       return $translate(code)
         .catch(() => code)

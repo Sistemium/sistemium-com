@@ -6,6 +6,20 @@
 
     let authCached = false;
 
+    return {
+      checkAuth,
+      init,
+      saveToken,
+      roles,
+      account,
+      isAuthorized,
+      logoff
+    };
+
+    /*
+    Functions
+     */
+
     function loadToken() {
       return localStorageService.get('authorization');
     }
@@ -67,14 +81,12 @@
       return allRoles && (!role || allRoles[role]);
     }
 
-    return {
-      checkAuth,
-      init,
-      saveToken,
-      roles,
-      account,
-      isAuthorized
-    };
+    function logoff() {
+      // let {accessToken} = authCached || {};
+      // return accessToken ? phaService.logoff(accessToken) : $q.resolve();
+      deleteToken();
+      return $q.resolve();
+    }
 
   }
 
