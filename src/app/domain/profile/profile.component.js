@@ -21,7 +21,7 @@
       translations: {}
     });
 
-    AuthService.checkAuth()
+    vm.cgBusy = AuthService.checkAuth()
       .then(() => {
         _.assign(vm, {
           account: AuthService.account(),

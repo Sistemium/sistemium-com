@@ -8,6 +8,12 @@
     .config($locationProvider => {
       $locationProvider.hashPrefix('');
     })
+    .value('cgBusyDefaults', {
+      message: 'BUSYLOADING',
+      delay: 0,
+      // minDuration: 5000,
+      templateUrl: 'app/components/busy/busy.html'
+    })
     .service('DEBUG', DEBUG);
 
 

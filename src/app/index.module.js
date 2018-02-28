@@ -13,6 +13,7 @@
       'ngMessages',
       'LocalStorageModule',
       // 'sistemiumAngularAuth',
+      'cgBusy',
       'models',
       'ui.bootstrap.position',
       'yaMap',
