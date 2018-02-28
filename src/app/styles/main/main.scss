@@ -23,6 +23,7 @@ $dark-gray-main: darken($gray, 20%);
   md-toast {
 
     bottom: unset;
+    top: 70px;
 
     @include responsive-only(gt-xxs) {
       left: unset;
