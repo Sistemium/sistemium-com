@@ -67,11 +67,6 @@ $dark-gray-main: darken($gray, 20%);
 
   .chapter > h2 {
     font-size: 120%;
-    background-color: $gray-background;
-    padding: $padding;
-    @include responsive-only(gt-xs) {
-      //text-align: right;
-    }
   }
 
 

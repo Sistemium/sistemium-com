@@ -2,4 +2,29 @@
 
 .main #services {
 
+  position: relative;
+
+  > h2 {
+
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    padding: $padding-main 0;
+    box-sizing: content-box;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    @include responsive-only(lt-sm) {
+      min-height: 35px;
+      font-size: 120%;
+    }
+
+    @include responsive-only(xxs) {
+      min-height: 30px;
+      font-size: 100%;
+    }
+
+  }
+
 }
