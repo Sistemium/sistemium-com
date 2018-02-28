@@ -39,6 +39,12 @@
     .logo {
 
       margin: 0;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $dark-gray-main;
+      font-size: 150%;
+      font-weight: 600;
 
       img {
         width: 54px;
@@ -46,11 +52,22 @@
         margin-right: $padding;
       }
 
+      @include responsive-only(lt-sm) {
+
+        font-size: 120%;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+      }
+
     }
 
     md-menu.lang {
 
-      @include responsive-only(xxs) {
+      @include responsive-only(lt-sm) {
         flex: 1;
         text-align: right;
       }
@@ -67,8 +84,8 @@
 
       > .md-button {
 
-        @include responsive-only(xxs) {
-         display: none;
+        @include responsive-only(lt-sm) {
+          display: none;
         }
 
         min-width: 0;
@@ -83,7 +100,7 @@
 
       }
 
-      @include responsive-only(xxs) {
+      @include responsive-only(lt-sm) {
         order: 2;
         flex: none;
         button {
@@ -91,9 +108,8 @@
         }
       }
 
-
       .sandwich-button {
-        @include responsive-only(gt-xxs) {
+        @include responsive-only(gt-xs) {
           display: none;
         }
         display: flex;
