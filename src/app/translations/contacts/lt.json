@@ -1,5 +1,10 @@
 {
   "CONTACTSPAGE": {
-    "INFO": "Vilnius, Kareivių g. 19"
+    "TITLE": "Sistemium UAB",
+    "LEAD": "Įmonės kontaktinis informacija",
+    "options": {
+      "address": "Z. Sierakausko g. 15A, LT-03105 Vilnius, Lietuva",
+      "phone": "+370(636)50-065"
+    }
   }
 }

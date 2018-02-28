@@ -20,8 +20,19 @@
   function config($logProvider, $mdThemingProvider, localStorageServiceProvider, $translateProvider) {
 
     $translateProvider.useStaticFilesLoader({
-      prefix: 'app/translations/locale-',
-      suffix: '.json'
+      files: [{
+        prefix: 'app/translations/locale-',
+        suffix: '.json'
+      },{
+        prefix: 'app/translations/services/',
+        suffix: '.json'
+      },{
+        prefix: 'app/translations/about/',
+        suffix: '.json'
+      },{
+        prefix: 'app/translations/contacts/',
+        suffix: '.json'
+      }]
     });
 
     $translateProvider

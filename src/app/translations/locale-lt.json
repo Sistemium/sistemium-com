@@ -18,30 +18,6 @@
 
   "BUSYLOADING": "Puslapis kraunasi",
 
-  "CONTACTSPAGE": {
-    "TITLE": "Sistemium UAB",
-    "LEAD": "Įmonės kontaktinis informacija",
-    "options": {
-      "address": "Z. Sierakausko g. 15A, LT-03105 Vilnius, Lietuva"
-    }
-  },
-  "ABOUTPAGE": {
-    "LEAD": "Pagrindiniai faktai apie įmonę",
-    "facts": {
-      "start": "Įsteigimo metai",
-      "profile": "Specializacija",
-      "profile_details": "Informacinės technologijos, programinė įranga kaip paslauga",
-      "vatID": "VAT numėris",
-      "legalAddress": "Juridinio asmens adresas",
-      "legalID": "Įmonės kodas",
-      "director": "Direktorius",
-      "directorName": "Aleksandras Levin"
-    }
-  },
-  "SERVICEPAGE": {
-    "LEAD": "Informacinės sistemos verslui"
-  },
-
   "LOGINPAGE": {
     "LEAD": "Vartotojo autorizacija",
     "options": {

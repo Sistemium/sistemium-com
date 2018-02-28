@@ -18,30 +18,6 @@
 
   "BUSYLOADING": "Loading data",
 
-  "CONTACTSPAGE": {
-    "TITLE": "Sistemium UAB",
-    "LEAD": "Company contact info",
-    "options": {
-      "address": "Lithuania, LT-03105 Vilnius, Z. Sierakausko str. 15A",
-      "phone": "+370(636)50-065"
-    }
-  },
-  "ABOUTPAGE": {
-    "LEAD": "Key facts about the company",
-    "facts": {
-      "start": "Year of foundation",
-      "profile": "Specialization",
-      "profile_details": "Information technology, software as a service",
-      "vatID": "VAT number",
-      "legalAddress": "Legal address",
-      "legalID": "Registration ID",
-      "director": "CEO",
-      "directorName": "Alexander Levin"
-    }
-  },
-  "SERVICEPAGE": {
-    "LEAD": "Enterprise information technology"
-  },
   "HOMEPAGE": {
     "LEAD": "Enterprise automation",
     "options": {
