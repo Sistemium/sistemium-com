@@ -16,9 +16,7 @@
 
     const vm = this;
 
-    _.assign(vm, {
-
-    });
+    _.assign(vm, {});
 
   }
 

@@ -1,5 +1,60 @@
-#about.chapter
+- var FORMATION = 'SERVICES-PAGE.businessFormation';
+- var MOBILE_APPS = 'SERVICES-PAGE.mobileApps';
+- var WEB_APPS = 'SERVICES-PAGE.webApps';
+- var INFRASTRUCTURE = 'SERVICES-PAGE.infrastructure';
+- var SUPPORT = 'SERVICES-PAGE.support';
+
+#services.chapter
 
   h1 Sistemium
 
-  p.lead(translate='SERVICEPAGE.LEAD')
+  p.lead(translate='SERVICES-PAGE.LEAD')
+
+
+  h2(translate='services.businessFormation')
+
+  p.text.
+    {{ '#{FORMATION}.learn' | translate }}
+    {{ '#{FORMATION}.analyze' | translate }}
+    {{ '#{FORMATION}.understand' | translate }}
+    {{ '#{FORMATION}.options.handheld' | translate }}
+    {{ '#{FORMATION}.options.barcode' | translate }}
+    {{ '#{FORMATION}.integration' | translate }}
+    {{ '#{FORMATION}.benefits.noHandProcessing' | translate }}
+    {{ '#{FORMATION}.benefits.lessErrors' | translate }}
+
+  h2(translate='services.mobileApps')
+
+  p.text.
+    {{ '#{MOBILE_APPS}.build' | translate }}
+    {{ '#{MOBILE_APPS}.customized' | translate }}
+    {{ '#{MOBILE_APPS}.networked' | translate }}
+    {{ '#{MOBILE_APPS}.offlineCapable' | translate }}
+    {{ '#{MOBILE_APPS}.backgroundSyncing' | translate }}
+
+  p.text.
+    {{ '#{MOBILE_APPS}.supportBarcodeScanners' | translate }}
+    {{ '#{MOBILE_APPS}.voiceControl' | translate }}
+    {{ '#{MOBILE_APPS}.voiceControlBenefits' | translate }}
+
+  h2(translate='services.webApps')
+
+  p.text.
+    {{ '#{WEB_APPS}.withModernBrowser' | translate }}
+    {{ '#{WEB_APPS}.withoutInstallation' | translate }}
+    {{ '#{WEB_APPS}.willAutoRefresh' | translate }}
+    {{ '#{WEB_APPS}.alwaysActual' | translate }}
+
+  h2(translate='services.infrastructure')
+
+  p.text.
+    {{ '#{INFRASTRUCTURE}.amazonHosting' | translate }}
+    {{ '#{INFRASTRUCTURE}.fullyManaged' | translate }}
+    {{ '#{INFRASTRUCTURE}.customerDoesNotPay' | translate }}
+
+  h2(translate='services.support')
+
+  p.text.
+    {{ '#{SUPPORT}.inCaseOfAnyIssues' | translate }}
+    {{ '#{SUPPORT}.byAnyContactMethod' | translate }}
+    {{ '#{SUPPORT}.weWillHelp' | translate }}
