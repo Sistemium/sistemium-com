@@ -32,7 +32,8 @@
      */
 
     function $onInit() {
-      saEtc.focusElementById('login-phone-input', 500);
+      // html autofocus won't work properly with masked input in Safari
+      saEtc.focusElementById('login-phone-input', 100);
     }
 
     function showToast(code, suffix = '') {
@@ -94,7 +95,8 @@
           vm.state = 'authorized';
           return afterLogin(res);
         })
-        .catch(() => {
+        .catch(err => {
+          console.warn(err);
           showToast('LOGINPAGE.errors.invalidSms');
         });
 

@@ -12,7 +12,7 @@
 
         label(translate='LOGINPAGE.options.phone')
 
-        input(
+        input#login-phone-input(
         ng-disabled='vm.busy || vm.state !== "phone"'
         ng-model='vm.phone'
         name='phone'
@@ -21,7 +21,6 @@
         ui-mask-placeholder
         ui-mask-placeholder-char="_"
         required
-        autofocus
         autocomplete='off'
         sa-enter-key='vm.submitClick()'
         )
