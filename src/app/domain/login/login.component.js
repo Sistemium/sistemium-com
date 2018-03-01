@@ -32,8 +32,6 @@
      */
 
     function $onInit() {
-      // html autofocus won't work properly with masked input in Safari
-      saEtc.focusElementById('login-phone-input', 100);
     }
 
     function showToast(code, suffix = '') {

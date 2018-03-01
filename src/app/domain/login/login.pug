@@ -27,6 +27,7 @@
         required
         autocomplete='off'
         sa-enter-key='vm.submitClick()'
+        sa-auto-focus='{{vm.state === "phone"}}'
         )
 
         .messages(ng-messages='loginForm.phone.$error')
