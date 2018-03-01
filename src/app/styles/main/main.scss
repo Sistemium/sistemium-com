@@ -46,6 +46,10 @@ $dark-gray-main: darken($gray, 20%);
       text-align: justify;
     }
 
+    .comment {
+      color: $gray;
+    }
+
   }
 
   @include responsive-only(xxs) {

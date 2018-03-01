@@ -28,7 +28,11 @@
   },
 
   "LOGINPAGE": {
+
     "LEAD": "User authorization",
+    "comment1": "You need to enter a mobile phone number that is registered in the System by your organization admin.",
+    "comment2": "Then will be sent an SMS with one-time password.",
+
     "options": {
       "phone": "Mobile number",
       "submit": "Submit",
