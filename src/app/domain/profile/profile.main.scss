@@ -19,6 +19,34 @@
 
   }
 
+  md-list.apps {
+
+    .md-subheader {
+      color: $black;
+      font-size: 100%;
+      margin-bottom: $padding-main;
+    }
+
+    .md-subheader:after {
+      content: ':';
+    }
+
+    md-list-item p > * + * {
+      margin-left: $padding-main;
+    }
+
+    @include responsive-only(xxs) {
+      md-list-item {
+        padding: 0;
+        p {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+  }
+
   @include responsive-only(gt-xxs) {
 
     .lead {

@@ -19,7 +19,14 @@
     },
 
     "youAre": "Jūs esate",
-    "ofOrg": "«{{orgName}}» organizacijoje"
+    "ofOrg": "«{{orgName}}» organizacijoje",
+
+    "apps": {
+      "header": "Programos prieinamas jums",
+      "iosProfile": "iPhone/iPad nustatymų profilis",
+      "jSistemium": "Naršyklinis programėlė",
+      "iOrders": "Sena naršyklinis programėlė"
+    }
 
   }
 }

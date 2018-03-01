@@ -19,7 +19,14 @@
     },
 
     "youAre": "You are",
-    "ofOrg": "of «{{orgName}}» organization"
+    "ofOrg": "of «{{orgName}}» organization",
+
+    "apps": {
+      "header": "Applications available to you",
+      "iosProfile": "Provisioning profile for iPhone/iPad",
+      "jSistemium": "Browser application",
+      "iOrders": "Old browser application"
+    }
 
   }
 }

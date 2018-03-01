@@ -12,9 +12,16 @@
     )
       span(translate='PROFILE-PAGE.options.logoff')
 
-  h2.
+  p.
     {{ 'PROFILE-PAGE.youAre' | translate }} {{ 'PROFILE-PAGE.role.' + vm.data.mainRole | translate }}
     {{ 'PROFILE-PAGE.ofOrg' | translate:vm.data }}
+
+  md-list.apps
+    md-subheader(translate='PROFILE-PAGE.apps.header')
+    md-list-item(ng-repeat='app in vm.data.apps track by app.code')
+      p
+        strong(translate='PROFILE-PAGE.apps.{{ app.code }}')
+        a(href='{{app.url}}') {{ app.url }}
 
   //md-list.roles
     md-list-item(ng-repeat='role in vm.roles | orderBy: "code" track by role.code')

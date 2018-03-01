@@ -22,7 +22,7 @@
       translations: {}
     });
 
-    $translate(['PROFILEPAGE.options.logoffConfirm', 'YES', 'NO'])
+    $translate(['PROFILE-PAGE.options.logoffConfirm', 'YES', 'NO'])
       .then(res => _.assign(vm.translations, res))
       .catch(_.noop);
 
@@ -34,14 +34,18 @@
       vm.cgBusy = AuthService.checkAuth()
         .then(() => {
 
+          let roles = AuthService.roles();
+          let account = AuthService.account();
+
           _.assign(vm, {
-            account: AuthService.account(),
-            roles: _.map(AuthService.roles(), (value, code) => {
+            account,
+            roles,
+            rolesArray: _.map(roles, (value, code) => {
               return {code, value};
             })
           });
 
-          vm.data = profileData(AuthService.roles());
+          vm.data = profileData(roles);
 
         });
     }
@@ -80,9 +84,81 @@
 
         roles: _.map(roles, (val, code) => {
           return _.find(knownRoles, code);
-        })
+        }),
+
+        apps: apps(org, roles)
 
       };
+
+    }
+
+    function apps(org, roles) {
+
+      let res = [];
+
+      if (roles.salesman || roles.supervisor) {
+
+        res.push({
+          url: `https://${jSistemiumUrl(org)}.sistemium.com`,
+          code: 'jSistemium'
+        });
+
+        if (org === 'bs') {
+          res.push({
+            url: 'https://sistemium.com/bs/tp/',
+            code: 'iOrders'
+          });
+        }
+
+      }
+
+      if (roles.salesman || roles.supervisor || roles.driver) {
+        res.push({
+          code: 'iosProfile',
+          url: `https://sistemium.com/${iosProfileUrl(org, roles)}`
+        })
+      }
+
+      return res;
+
+    }
+
+    function iosProfileUrl(org, roles) {
+
+      let suffix = roles.driver ? 'ios-drivers' : 'ios-setup';
+
+      switch (org) {
+        case 'r50p':
+        case 'dr50':
+        case 'r50': {
+          return `r50/${suffix}`;
+        }
+        case 'bs':
+        case 'dev': {
+          return `bs/${suffix}`;
+        }
+
+      }
+
+    }
+
+    function jSistemiumUrl(org) {
+
+      switch (org) {
+        case 'dev':
+        case 'dr50': {
+          return 'isd';
+        }
+        case 'bs': {
+          return 'jt';
+        }
+        case 'r50': {
+          return 'i';
+        }
+        case 'r50p': {
+          return 'ibi';
+        }
+      }
 
     }
 
@@ -91,8 +167,8 @@
       let t = vm.translations;
 
       let confirm = $mdDialog.confirm()
-        .title(t['PROFILEPAGE.options.logoffConfirm'])
-        .ariaLabel(t['PROFILEPAGE.options.logoffConfirm'])
+        .title(t['PROFILE-PAGE.options.logoffConfirm'])
+        .ariaLabel(t['PROFILE-PAGE.options.logoffConfirm'])
         .targetEvent(ev)
         .ok(t['YES'])
         .cancel(t['NO']);
