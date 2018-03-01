@@ -23,15 +23,16 @@
       $onInit
     });
 
-    if (AuthService.account()) {
-      $state.go('profile');
-    }
-
     /*
     Functions
      */
 
     function $onInit() {
+      vm.cgBusy = AuthService.checkAuth()
+        .then(() => {
+          $state.go('profile')
+        })
+        .catch(_,noop);
     }
 
     function showToast(code, suffix = '') {
