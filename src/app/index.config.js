@@ -23,19 +23,19 @@
       files: [{
         prefix: 'app/translations/locale-',
         suffix: '.json'
-      },{
+      }, {
         prefix: 'app/translations/services/',
         suffix: '.json'
-      },{
+      }, {
         prefix: 'app/translations/about/',
         suffix: '.json'
-      },{
+      }, {
         prefix: 'app/translations/contacts/',
         suffix: '.json'
-      },{
+      }, {
         prefix: 'app/translations/profile/',
         suffix: '.json'
-      },{
+      }, {
         prefix: 'app/translations/login/',
         suffix: '.json'
       }]

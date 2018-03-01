@@ -3,12 +3,9 @@
 (function () {
 
   angular.module('stcom')
-    .service('Helpers', function(
-    ) {
+    .service('Helpers', function () {
 
-      return {
-
-      };
+      return {};
 
     });
 

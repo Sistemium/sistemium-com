@@ -48,7 +48,7 @@
             .position('top right')
             .parent(el)
             .hideDelay(4000)
-          ))
+        ))
         .catch(_.noop);
 
     }

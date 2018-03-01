@@ -15,8 +15,7 @@
       name: 'User',
 
       relations: {
-        hasMany: {
-        }
+        hasMany: {}
       },
 
       meta: {

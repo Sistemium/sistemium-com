@@ -45,7 +45,7 @@
         return busy;
       }
 
-      busy =  phaService.getRoles(token)
+      busy = phaService.getRoles(token)
         .then(auth => {
           console.info('Authorized', auth);
           authCached = auth;
