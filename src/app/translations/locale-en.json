@@ -27,29 +27,6 @@
     }
   },
 
-  "LOGINPAGE": {
-
-    "LEAD": "User authorization",
-    "comment1": "You need to enter a mobile phone number that is registered in the System by your organization admin.",
-    "comment2": "Then will be sent an SMS with one-time password.",
-
-    "options": {
-      "phone": "Mobile number",
-      "submit": "Submit",
-      "sms": "SMS code"
-    },
-    "errors": {
-      "invalidSms": "Wrong SMS code",
-      "unknownPhone": "Unknown phone number",
-      "phoneRequired": "Phone number is required",
-      "phoneMask": "Phone number must match the mask"
-    },
-    "messages": {
-      "smsSent": "An SMS with secret code is sent",
-      "welcome": "Welcome"
-    }
-  },
-
   "services": {
     "businessFormation": "Business process analysis and configuration",
     "mobileApps": "Specialized smartphone and tablet applications",

@@ -1,0 +1,23 @@
+{
+  "LOGINPAGE": {
+
+    "LEAD": "Vartotojo autorizacija",
+    "comment1": "Jums reikia įvesti mobiliojo telefono numerį, kurį jūsų sistemos administratorius yra įregistravęs sistemoje.",
+    "comment2": "Tada jums bus išsiųstas SMS su vienkartiniu slaptažodžiu.",
+
+    "options": {
+      "phone": "Mobilaus telefono numeris",
+      "submit": "Pateikti"
+    },
+    "errors": {
+      "invalidSms": "Neteisingas SMS kodas",
+      "unknownPhone": "Nežinomas telefono numeris",
+      "phoneRequired": "Telefono numeris privalomas",
+      "phoneMask": "Telefono numeris turi atitikti kaukę"
+    },
+    "messages": {
+      "smsSent": "An SMS with secret code is sent",
+      "welcome": "Labas"
+    }
+  }
+}

@@ -35,6 +35,9 @@
       },{
         prefix: 'app/translations/profile/',
         suffix: '.json'
+      },{
+        prefix: 'app/translations/login/',
+        suffix: '.json'
       }]
     });
 
