@@ -49,6 +49,7 @@
         .then(auth => {
           console.info('Authorized', auth);
           authCached = auth;
+          return auth;
         })
         .catch(() => busy = false);
 
