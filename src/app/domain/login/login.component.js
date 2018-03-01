@@ -32,7 +32,7 @@
         .then(() => {
           $state.go('profile')
         })
-        .catch(_,noop);
+        .catch(_.noop);
     }
 
     function showToast(code, suffix = '') {
