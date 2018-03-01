@@ -32,7 +32,7 @@
 
     function $onInit() {
       vm.cgBusy = AuthService.checkAuth()
-        .then(() => {
+        .then(auth => {
 
           let roles = AuthService.roles();
           let account = AuthService.account();
@@ -40,6 +40,7 @@
           _.assign(vm, {
             account,
             roles,
+            accessToken: auth.accessToken,
             rolesArray: _.map(roles, (value, code) => {
               return {code, value};
             })
@@ -106,6 +107,7 @@
         if (org === 'bs') {
           res.push({
             url: 'https://sistemium.com/bs/tp/',
+            params: `?access-token=${vm.accessToken}`,
             code: 'iOrders'
           });
         }

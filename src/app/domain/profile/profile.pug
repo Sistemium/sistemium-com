@@ -21,7 +21,7 @@
     md-list-item(ng-repeat='app in vm.data.apps track by app.code')
       p
         strong(translate='PROFILE-PAGE.apps.{{ app.code }}')
-        a(href='{{app.url}}') {{ app.url }}
+        a(href='{{app.url}}{{app.params||""}}') {{ app.url }}
 
   //md-list.roles
     md-list-item(ng-repeat='role in vm.roles | orderBy: "code" track by role.code')
