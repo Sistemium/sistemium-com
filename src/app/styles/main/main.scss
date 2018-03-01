@@ -70,14 +70,7 @@ $dark-gray-main: darken($gray, 20%);
 
     .lead, .chapter h1 {
       text-align: center;
-      margin-top: 2px;
-      margin-bottom: 0;
-    }
-
-    .lead {
-      margin-top: 5px;
-      font-size: 120%;
-      //font-weight: bold;
+      margin: 15px 0 10px;
     }
 
   }
