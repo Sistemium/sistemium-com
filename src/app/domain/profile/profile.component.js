@@ -18,18 +18,9 @@
 
     _.assign(vm, {
       logoffClick,
+      $onInit,
       translations: {}
     });
-
-    vm.cgBusy = AuthService.checkAuth()
-      .then(() => {
-        _.assign(vm, {
-          account: AuthService.account(),
-          roles: _.map(AuthService.roles(), (value, code) => {
-            return {code, value};
-          })
-        });
-      });
 
     $translate(['PROFILEPAGE.options.logoffConfirm', 'YES', 'NO'])
       .then(res => _.assign(vm.translations, res))
@@ -38,6 +29,18 @@
     /*
     Functions
      */
+
+    function $onInit() {
+      vm.cgBusy = AuthService.checkAuth()
+        .then(() => {
+          _.assign(vm, {
+            account: AuthService.account(),
+            roles: _.map(AuthService.roles(), (value, code) => {
+              return {code, value};
+            })
+          });
+        });
+    }
 
     function logoffClick(ev) {
 

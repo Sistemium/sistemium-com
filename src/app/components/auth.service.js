@@ -5,6 +5,7 @@
   function AuthService(localStorageService, phaService, ToastService, $q) {
 
     let authCached = false;
+    let busy;
 
     return {
       checkAuth,
@@ -36,20 +37,29 @@
 
       let token = loadToken();
 
-      return phaService.getRoles(token);
+      if (!token) {
+        return $q.reject('Not authorized yet');
+      }
+
+      if (busy) {
+        return busy;
+      }
+
+      busy =  phaService.getRoles(token)
+        .then(auth => {
+          console.info('Authorized', auth);
+          authCached = auth;
+        })
+        .catch(() => busy = false);
+
+      return busy;
 
     }
 
     function init() {
 
-      if (!loadToken()) {
-        return $q.reject('Not authorized yet');
-      }
-
-      return checkAuth()
+      return (busy || checkAuth())
         .then(auth => {
-          console.info('Authorized', auth);
-          authCached = auth;
           ToastService.success('LOGINPAGE.messages.welcome', `, ${auth.account.name}!`, {timeout: 1000});
           return auth;
         })
