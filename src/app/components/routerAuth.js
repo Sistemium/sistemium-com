@@ -2,14 +2,14 @@
 
 (function () {
 
-  function routerAuth ($rootScope, AuthService, $state) {
+  function routerAuth($rootScope, AuthService, $state) {
 
     let authState = {
       busy: true,
       authorized: false
     };
 
-    function init (authPromise) {
+    function init(authPromise) {
 
       authPromise
         .then(() => _.assign(authState, {busy: false, authorized: true}))
