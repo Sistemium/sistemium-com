@@ -14,6 +14,9 @@ require('sistemium-gulp')
           'url(MaterialIcons': 'url(../fonts/MaterialIcons'
         }
       }
+    },
+    others: {
+      flags: ['./bower_components/flag-icon-css/flags/**/{ru,gb,lt}.*', '/flags', false]
     }
   })
   .run(require('gulp'));
