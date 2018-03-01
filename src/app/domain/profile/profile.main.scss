@@ -19,11 +19,11 @@
 
   }
 
-
   @include responsive-only(gt-xxs) {
 
     .lead {
       float: left;
+      margin-top: 0;
     }
 
     > .options {
@@ -41,33 +41,20 @@
   > .options {
 
     > *:last-child {
-      margin-right: 0;
+      margin: 0;
     }
 
-    .logoff {
+    @include responsive-only(xxs) {
 
-      min-width: 0;
+      margin-top: $padding-main;
+      .logoff {
 
-      i {
-        display: none;
-        vertical-align: middle;
-        margin-bottom: 2px;
-        font-size: 26px;
-      }
-
-      @include responsive-only(xxs) {
-
-        position: absolute;
-        right: 0;
-        top: 33px;
         box-shadow: none;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
 
-        i {
-          display: inline-block;
-        }
-        span {
-          display: none;
-        }
       }
     }
 

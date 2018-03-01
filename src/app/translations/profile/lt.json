@@ -1,0 +1,25 @@
+{
+  "PROFILE-PAGE": {
+
+    "LEAD": "Vartotojo profilis",
+
+    "options": {
+      "logoff": "Atsijungti",
+      "logoffConfirm": "Ar tikrai norėtute atsijungti iš Sistemos?"
+    },
+
+    "role": {
+      "admin": "Administratorius",
+      "supervisor": "Supervizorius",
+      "salesman": "Pardavimų Atstovas",
+      "driver": "Vairuotojas",
+      "logist": "Logistikos Vadybininkas",
+      "accountant": "Buhalteris",
+      "coordinator": "Pardavimų Vadybininkas"
+    },
+
+    "youAre": "Jūs esate",
+    "ofOrg": "«{{orgName}}» organizacijoje"
+
+  }
+}

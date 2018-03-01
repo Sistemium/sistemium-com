@@ -1,0 +1,25 @@
+{
+  "PROFILE-PAGE": {
+
+    "LEAD": "User profile",
+
+    "options": {
+      "logoff": "Sign out",
+      "logoffConfirm": "Would you really like to sign out?"
+    },
+
+    "role": {
+      "admin": "an Administrator",
+      "supervisor": "a Supervisor",
+      "salesman": "a Sales Representative",
+      "driver": "a Driver",
+      "logist": "a Logistics manager",
+      "accountant": "an Accountant",
+      "coordinator": "a Coordinator"
+    },
+
+    "youAre": "You are",
+    "ofOrg": "of «{{orgName}}» organization"
+
+  }
+}

@@ -2,7 +2,7 @@
 
   h1 {{ vm.account.name }}
 
-  p.lead(translate='PROFILEPAGE.LEAD')
+  p.lead(translate='PROFILE-PAGE.LEAD')
 
   .options
 
@@ -10,10 +10,13 @@
     aria-label='User sign out'
     ng-click='vm.logoffClick($event)'
     )
-      i.material-icons exit_to_app
-      span(translate='PROFILEPAGE.options.logoff')
+      span(translate='PROFILE-PAGE.options.logoff')
 
-  md-list.roles
+  h2.
+    {{ 'PROFILE-PAGE.youAre' | translate }} {{ 'PROFILE-PAGE.role.' + vm.data.mainRole | translate }}
+    {{ 'PROFILE-PAGE.ofOrg' | translate:vm.data }}
+
+  //md-list.roles
     md-list-item(ng-repeat='role in vm.roles | orderBy: "code" track by role.code')
 
       md-icon

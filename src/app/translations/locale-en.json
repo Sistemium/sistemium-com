@@ -46,14 +46,6 @@
     }
   },
 
-  "PROFILEPAGE": {
-    "LEAD": "User profile",
-    "options": {
-      "logoff": "Sign out",
-      "logoffConfirm": "Would you really like to sign out?"
-    }
-  },
-
   "services": {
     "businessFormation": "Business process analysis and configuration",
     "mobileApps": "Specialized smartphone and tablet applications",

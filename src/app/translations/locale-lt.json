@@ -36,14 +36,6 @@
     }
   },
 
-  "PROFILEPAGE": {
-    "LEAD": "Vartotojo profilis",
-    "options": {
-      "logoff": "Atsijungti",
-      "logoffConfirm": "Ar tikrai norėtute atsijungti iš Sistemos?"
-    }
-  },
-
   "HOMEPAGE": {
     "LEAD": "Automatizacija įmonėms",
     "options": {
@@ -57,7 +49,7 @@
     "businessFormation": "Verslo procesų analizė ir konfigūracija",
     "mobileApps": "Specializuotos išmaniųjų telefonų ir planšetinių kompiuterių programėlės",
     "webApps": "Pritaikytos darbalaukio naršyklės programos",
-    "infrastructure": "Debesis infrastruktūros valdymas",
+    "infrastructure": "Debesuotos infrastruktūros valdymas",
     "support": "Techninė pagalba ir konsultavimas"
   }
 

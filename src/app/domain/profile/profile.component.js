@@ -33,13 +33,57 @@
     function $onInit() {
       vm.cgBusy = AuthService.checkAuth()
         .then(() => {
+
           _.assign(vm, {
             account: AuthService.account(),
             roles: _.map(AuthService.roles(), (value, code) => {
               return {code, value};
             })
           });
+
+          vm.data = profileData(AuthService.roles());
+
         });
+    }
+
+    function orgName(org) {
+      switch (org) {
+        case 'bs':
+        case 'dev': {
+          return 'ДжейТи-Логистик';
+        }
+        case 'r50':
+        case 'dr50': {
+          return 'Регион-50';
+        }
+        case 'r50p': {
+          return 'Ибис';
+        }
+      }
+
+    }
+
+    const knownRoles = ['admin', 'supervisor', 'salesman', 'driver', 'accountant', 'logist'];
+
+    function mainRole(roles) {
+      return _.find(knownRoles, role => roles[role]);
+    }
+
+    function profileData(roles) {
+
+      let {org} = vm.account;
+
+      return {
+
+        orgName: orgName(org),
+        mainRole: mainRole(roles),
+
+        roles: _.map(roles, (val, code) => {
+          return _.find(knownRoles, code);
+        })
+
+      };
+
     }
 
     function logoffClick(ev) {
