@@ -2,6 +2,7 @@
   "ABOUTPAGE": {
     "LEAD": "Pagrindiniai faktai apie įmonę",
     "facts": {
+      "name": "Pavadinimas",
       "start": "Įsteigimo metai",
       "profile": "Specializacija",
       "profile_details": "Informacinės technologijos, programinė įranga kaip paslauga",

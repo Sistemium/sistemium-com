@@ -2,7 +2,7 @@
 
 (function () {
 
-  function BodyController(saUserAgent, StyleService) {
+  function BodyController(saUserAgent, StyleService, appcache, $window, ToastService, $timeout) {
 
     const vm = this;
 
@@ -13,6 +13,24 @@
       currentStyle: () => StyleService.getStyle()
 
     });
+
+    vm.cacheStatus = function () {
+      return appcache.textStatus;
+    };
+
+    function onUpdate() {
+      ToastService.action('APP-GOT-UPDATE', 'APPLY')
+        .then(() => $window.location.reload(true))
+        .catch(() => {
+          $timeout(1000).then(onUpdate);
+        });
+    }
+
+    $window.stmAppCacheUpdated = onUpdate;
+
+    appcache.addEventListener('updateready', onUpdate, true);
+
+    $window.toast = ToastService;
 
   }
 

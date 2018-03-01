@@ -12,6 +12,7 @@
       'ngFileUpload',
       'ngMessages',
       'LocalStorageModule',
+      'ng-appcache',
       // 'sistemiumAngularAuth',
       'cgBusy',
       'models',

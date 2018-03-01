@@ -28,5 +28,7 @@
     "webApps": "Pritaikytos darbalaukio naršyklės programos",
     "infrastructure": "Debesuotos infrastruktūros valdymas",
     "support": "Techninė pagalba ir konsultavimas"
-  }
+  },
+  "APP-GOT-UPDATE": "Gautas atnaujinimas",
+  "APPLY": "Pritaikyti"
 }

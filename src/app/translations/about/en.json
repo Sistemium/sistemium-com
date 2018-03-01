@@ -2,6 +2,7 @@
   "ABOUTPAGE": {
     "LEAD": "Key facts about the company",
     "facts": {
+      "name": "Name",
       "start": "Year of foundation",
       "profile": "Specialization",
       "profile_details": "Information technology, software as a service",

@@ -24,7 +24,8 @@
     "angular-translate-storage-cookie": "^2.15.1",
     "angular-translate-loader-partial": "^2.15.1",
     "angular-translate-loader-static-files": "^2.15.1",
-    "angular-busy": "^4.1.4"
+    "angular-busy": "^4.1.4",
+    "ng-appcache": "^2.0.1"
   },
   "overrides": {
     "angular-ui-bootstrap": {
