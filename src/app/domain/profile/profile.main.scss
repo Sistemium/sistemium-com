@@ -3,18 +3,17 @@
 .main #profile {
 
   position: relative;
+  $padding: $padding-main;
 
-  md-list.roles {
-
-    $padding: $padding-main/2;
-    md-list-item, md-list-item:before {
-      min-height: 34px;
-    }
+  md-list {
 
     md-icon {
       margin-top: $padding;
       margin-bottom: $padding;
-      color: green;
+      margin-right: $padding;
+      &.authorized {
+        color: green;
+      }
     }
 
   }
@@ -24,7 +23,7 @@
     .md-subheader {
       color: $black;
       font-size: 100%;
-      margin-bottom: $padding-main;
+      margin-bottom: $padding;
     }
 
     .md-subheader:after {
@@ -32,7 +31,9 @@
     }
 
     md-list-item p > * + * {
-      margin-left: $padding-main;
+      @include responsive-only(gt-xxs) {
+        margin-left: $padding;
+      }
     }
 
     @include responsive-only(xxs) {
@@ -74,7 +75,7 @@
 
     @include responsive-only(xxs) {
 
-      margin-top: $padding-main;
+      margin-top: $padding;
       .logoff {
 
         box-shadow: none;

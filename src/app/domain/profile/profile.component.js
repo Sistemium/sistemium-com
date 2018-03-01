@@ -93,6 +93,10 @@
 
     }
 
+    function checkAppAuthorization(key) {
+      return $window.localStorage.getItem(key);
+    }
+
     function apps(org, roles) {
 
       let res = [];
@@ -105,11 +109,19 @@
         });
 
         if (org === 'bs') {
-          res.push({
+
+          let app = {
             url: 'https://sistemium.com/bs/tp/',
-            params: `?access-token=${vm.accessToken}`,
-            code: 'iOrders'
-          });
+            code: 'iOrders',
+            authorized: checkAppAuthorization(`${org}.accessToken`)
+          };
+
+          if (!app.authorized) {
+            app.params = `?access-token=${vm.accessToken}`;
+          }
+
+          res.push(app);
+
         }
 
       }
