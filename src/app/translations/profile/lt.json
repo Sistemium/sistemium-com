@@ -1,13 +1,10 @@
 {
   "PROFILE-PAGE": {
-
     "LEAD": "Vartotojo profilis",
-
     "options": {
       "logoff": "Atsijungti",
       "logoffConfirm": "Ar tikrai norėtute atsijungti iš Sistemos?"
     },
-
     "role": {
       "admin": "Administratorius",
       "supervisor": "Supervizorius",
@@ -17,16 +14,13 @@
       "accountant": "Buhalteris",
       "coordinator": "Pardavimų Vadybininkas"
     },
-
     "youAre": "Jūs esate",
     "ofOrg": "«{{orgName}}» organizacijoje",
-
     "apps": {
       "header": "Programos prieinamas jums",
       "iosProfile": "iPhone/iPad nustatymų profilis",
       "jSistemium": "Naršyklinis programėlė",
       "iOrders": "Sena naršyklinis programėlė"
     }
-
   }
 }

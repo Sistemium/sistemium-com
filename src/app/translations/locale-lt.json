@@ -6,18 +6,14 @@
     "dark": "Tamsus",
     "main": "Pagrindinis"
   },
-
   "SERVICES": "Paslaugos",
   "CONTACTS": "Kontaktai",
   "ABOUT": "Apie",
   "PROFILE": "Savitarna",
   "LOGIN": "Prisijungti",
-
   "YES": "Taip",
   "NO": "Ne",
-
   "BUSYLOADING": "Puslapis kraunasi",
-
   "HOMEPAGE": {
     "LEAD": "Automatizacija įmonėms",
     "options": {
@@ -26,7 +22,6 @@
       "learn": "Daugiau apie paslaugas"
     }
   },
-
   "services": {
     "businessFormation": "Verslo procesų analizė ir konfigūracija",
     "mobileApps": "Specializuotos išmaniųjų telefonų ir planšetinių kompiuterių programėlės",
@@ -34,5 +29,4 @@
     "infrastructure": "Debesuotos infrastruktūros valdymas",
     "support": "Techninė pagalba ir konsultavimas"
   }
-
 }

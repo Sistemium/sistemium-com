@@ -6,18 +6,14 @@
     "dark": "Dark",
     "main": "Main"
   },
-
   "SERVICES": "Services",
   "CONTACTS": "Contacts",
   "ABOUT": "About",
   "PROFILE": "Profile",
   "LOGIN": "Sign in",
-
   "YES": "Yes",
   "NO": "No",
-
   "BUSYLOADING": "Loading data",
-
   "HOMEPAGE": {
     "LEAD": "Enterprise automation",
     "options": {
@@ -26,7 +22,6 @@
       "learn": "Learn more"
     }
   },
-
   "services": {
     "businessFormation": "Business process analysis and configuration",
     "mobileApps": "Specialized smartphone and tablet applications",
@@ -34,6 +29,5 @@
     "infrastructure": "Cloud infrastructure management",
     "support": "Technical support and consulting"
   }
-
 }
 

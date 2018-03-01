@@ -1,13 +1,10 @@
 {
   "PROFILE-PAGE": {
-
     "LEAD": "User profile",
-
     "options": {
       "logoff": "Sign out",
       "logoffConfirm": "Would you really like to sign out?"
     },
-
     "role": {
       "admin": "an Administrator",
       "supervisor": "a Supervisor",
@@ -17,16 +14,13 @@
       "accountant": "an Accountant",
       "coordinator": "a Coordinator"
     },
-
     "youAre": "You are",
     "ofOrg": "of «{{orgName}}» organization",
-
     "apps": {
       "header": "Applications available to you",
       "iosProfile": "Provisioning profile for iPhone/iPad",
       "jSistemium": "Browser application",
       "iOrders": "Old browser application"
     }
-
   }
 }

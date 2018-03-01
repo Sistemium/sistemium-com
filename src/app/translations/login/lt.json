@@ -1,10 +1,8 @@
 {
   "LOGINPAGE": {
-
     "LEAD": "Vartotojo autorizacija",
     "comment1": "Jums reikia įvesti mobiliojo telefono numerį, kurį jūsų sistemos administratorius yra įregistravęs sistemoje.",
     "comment2": "Tada jums bus išsiųstas SMS su vienkartiniu slaptažodžiu.",
-
     "options": {
       "phone": "Mobilaus telefono numeris",
       "submit": "Pateikti"
