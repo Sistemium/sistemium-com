@@ -25,7 +25,7 @@
   "services": {
     "businessFormation": "Verslo procesų analizė ir konfigūracija",
     "mobileApps": "Specializuotos išmaniųjų telefonų ir planšetinių kompiuterių programėlės",
-    "webApps": "Pritaikytos darbalaukio naršyklės programos",
+    "webApps": "Pritaikytos naršyklinis programos staliniams kompiuteriams",
     "infrastructure": "Debesuotos infrastruktūros valdymas",
     "support": "Techninė pagalba ir konsultavimas"
   },
