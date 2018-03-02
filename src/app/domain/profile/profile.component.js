@@ -105,7 +105,8 @@
 
         res.push({
           url: `https://${jSistemiumUrl(org)}.sistemium.com`,
-          code: 'jSistemium'
+          code: 'jSistemium',
+          params: `/#/auth?access-token=${vm.accessToken}`
         });
 
         if (org === 'bs') {
@@ -167,7 +168,7 @@
           return 'jt';
         }
         case 'r50': {
-          return 'i';
+          return 'sales';
         }
         case 'r50p': {
           return 'ibi';
