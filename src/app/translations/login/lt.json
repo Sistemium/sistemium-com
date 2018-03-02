@@ -5,7 +5,8 @@
     "comment2": "Tada jums bus išsiųstas SMS su vienkartiniu slaptažodžiu.",
     "options": {
       "phone": "Mobilaus telefono numeris",
-      "submit": "Pateikti"
+      "submit": "Pateikti",
+      "sms": "SMS kodas"
     },
     "errors": {
       "invalidSms": "Neteisingas SMS kodas",
