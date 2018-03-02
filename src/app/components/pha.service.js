@@ -9,11 +9,18 @@
 
     const url = 'https://api.sistemium.com/pha/auth';
     const logoffUrl = 'https://api.sistemium.com/pha/logoff';
-    const rolesUrl = 'https://api.sistemium.com/pha/rolestest';
+    const rolesUrl = 'https://api.sistemium.com/pha/roles';
 
     const me = this;
 
     let ID;
+
+    return angular.extend(me, {
+      auth,
+      logoff,
+      confirm,
+      getRoles
+    });
 
     function auth(mobileNumber) {
       return $http
@@ -76,13 +83,6 @@
         });
 
     }
-
-    return angular.extend(me, {
-      auth,
-      logoff,
-      confirm,
-      getRoles
-    });
 
   }
 
