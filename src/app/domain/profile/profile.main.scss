@@ -5,6 +5,10 @@
   position: relative;
   $padding: $padding-main;
 
+  h1 {
+    margin-bottom: 1em;
+  }
+
   md-list {
 
     md-icon {
@@ -50,18 +54,12 @@
 
   @include responsive-only(gt-xxs) {
 
-    .lead {
-      float: left;
-      margin-top: 0;
-    }
-
     > .options {
 
-      float: right;
-
-      & + * {
-        clear: both;
-      }
+      position: absolute;
+      top: $padding-main;
+      right: 0;
+      margin-right: 0;
 
     }
 
@@ -76,6 +74,7 @@
     @include responsive-only(xxs) {
 
       margin-top: $padding;
+
       .logoff {
 
         box-shadow: none;

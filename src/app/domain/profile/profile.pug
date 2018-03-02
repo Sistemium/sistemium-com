@@ -1,7 +1,5 @@
 .chapter#profile(cg-busy='vm.cgBusy')
 
-  h1 {{ vm.account.name }}
-
   p.lead(translate='PROFILE-PAGE.LEAD')
 
   .options
@@ -11,6 +9,8 @@
     ng-click='vm.logoffClick($event)'
     )
       span(translate='PROFILE-PAGE.options.logoff')
+
+  h1 {{ vm.account.name }}
 
   p.
     {{ 'PROFILE-PAGE.youAre' | translate }} {{ 'PROFILE-PAGE.role.' + vm.data.mainRole | translate }}
