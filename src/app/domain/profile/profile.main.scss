@@ -22,16 +22,20 @@
 
   }
 
-  md-list.apps {
+  .md-subheader {
 
-    .md-subheader {
-      color: $black;
-      font-size: 100%;
-      margin-bottom: $padding;
+    margin-bottom: $padding;
+
+    &:after {
+      content: ':';
     }
 
-    .md-subheader:after {
-      content: ':';
+  }
+
+  md-list.apps {
+
+    strong {
+      font-weight: normal;
     }
 
     md-list-item p > * + * {
@@ -86,6 +90,10 @@
       }
     }
 
+  }
+
+  md-chips-wrap {
+    box-shadow: none;
   }
 
 }

@@ -6,21 +6,25 @@
       "logoffConfirm": "Would you really like to sign out?"
     },
     "role": {
-      "admin": "an Administrator",
-      "supervisor": "a Supervisor",
-      "salesman": "a Sales Representative",
-      "driver": "a Driver",
-      "logist": "a Logistics manager",
-      "accountant": "an Accountant",
-      "coordinator": "a Coordinator"
+      "admin": "Administrator",
+      "supervisor": "Supervisor",
+      "salesman": "Sales Representative",
+      "driver": "Driver",
+      "logist": "Logistics manager",
+      "accountant": "Accountant",
+      "coordinator": "Coordinator",
+      "warehouse": "Storekeeper",
+      "picker": "Picker"
     },
-    "youAre": "You are",
+    "youAre": "You are a member",
     "ofOrg": "of «{{orgName}}» organization",
+    "assignedRoles": "These are the roles assigned to you",
     "apps": {
       "header": "Applications available to you",
       "iosProfile": "Provisioning profile for iPhone/iPad",
       "jSistemium": "Browser application",
-      "iOrders": "Old browser application"
+      "iOrders": "Old browser application",
+      "stg": "Office and warehouse program"
     }
   }
 }

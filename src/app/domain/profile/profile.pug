@@ -13,8 +13,13 @@
   h1 {{ vm.account.name }}
 
   p.
-    {{ 'PROFILE-PAGE.youAre' | translate }} {{ 'PROFILE-PAGE.role.' + vm.data.mainRole | translate }}
+    {{ 'PROFILE-PAGE.youAre' | translate }}
     {{ 'PROFILE-PAGE.ofOrg' | translate:vm.data }}
+
+  md-subheader.roles(translate='PROFILE-PAGE.assignedRoles')
+
+  md-chips(ng-model='vm.data.roles' readonly="true")
+    md-chip-template {{ 'PROFILE-PAGE.role.' + $chip.code | translate }}
 
   md-list.apps
     md-subheader(translate='PROFILE-PAGE.apps.header')

@@ -12,15 +12,19 @@
       "driver": "Vairuotojas",
       "logist": "Logistikos Vadybininkas",
       "accountant": "Buhalteris",
-      "coordinator": "Pardavimų Vadybininkas"
+      "coordinator": "Pardavimų Vadybininkas",
+      "warehouse": "Sandėlininkas",
+      "picker": "Rinktuvas"
     },
     "youAre": "Jūs esate",
-    "ofOrg": "«{{orgName}}» organizacijoje",
+    "ofOrg": "«{{orgName}}» organizacijos narys",
+    "assignedRoles": "Tai yra jums priskirti vaidmenys",
     "apps": {
       "header": "Programos prieinamas jums",
       "iosProfile": "iPhone/iPad nustatymų profilis",
       "jSistemium": "Naršyklinis programėlė",
-      "iOrders": "Sena naršyklinis programėlė"
+      "iOrders": "Sena naršyklinis programėlė",
+      "stg": "Programėlė ofisui ir sandeliui"
     }
   }
 }

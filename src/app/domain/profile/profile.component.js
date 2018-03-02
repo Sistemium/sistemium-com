@@ -68,7 +68,13 @@
 
     }
 
-    const knownRoles = ['admin', 'supervisor', 'salesman', 'driver', 'accountant', 'logist'];
+    const knownRoles = [
+      'admin', '' +
+      'supervisor', 'salesman',
+      'accountant',
+      'logist', 'driver',
+      'warehouse', 'picker'
+    ];
 
     function mainRole(roles) {
       return _.find(knownRoles, role => roles[role]);
@@ -83,9 +89,9 @@
         orgName: orgName(org),
         mainRole: mainRole(roles),
 
-        roles: _.map(roles, (val, code) => {
-          return _.find(knownRoles, code);
-        }),
+        roles: _.filter(_.map(roles, (val, code) => {
+          return _.find(knownRoles, role => role === code) ? {code} : false;
+        })),
 
         apps: apps(org, roles)
 
@@ -131,6 +137,14 @@
         res.push({
           code: 'iosProfile',
           url: `https://sistemium.com/${iosProfileUrl(org, roles)}`
+        })
+      }
+
+      if (roles.warehouse || roles.supervisor || roles.logist || roles.stg) {
+        res.push({
+          code: 'stg',
+          url: `https://stg.sistemium.com`,
+          params: `/#/?access-token=${vm.accessToken}`
         })
       }
 
