@@ -7,8 +7,8 @@ $dark-gray-main: darken($gray, 20%);
 
 .main {
 
-  $padding: $padding-main/2;
-  $margin: $padding-main;
+  $padding: $padding-main;
+  $margin: $padding-main * 2;
 
   color: $black;
 
@@ -20,8 +20,9 @@ $dark-gray-main: darken($gray, 20%);
     color: lighten($black, 15%);
   }
 
-  h1 {
-    //font-size: 200%;
+  h1, p {
+    margin-top: $margin;
+    margin-bottom: $margin;
   }
 
   .chapter > h2 {
@@ -37,8 +38,8 @@ $dark-gray-main: darken($gray, 20%);
   .chapter {
 
     h1 {
-      margin-top: 0;
-      margin-bottom: 10px;
+      //margin-top: 0;
+      //margin-bottom: $padding;
       font-size: 150%;
     }
 
@@ -57,21 +58,16 @@ $dark-gray-main: darken($gray, 20%);
 
     .chapter > h1 {
       //font-size: 200%;
-      margin-bottom: 8px;
-    }
-
-    .md-list-item-text {
-      font-size: 90%;
-    }
-
-    md-list-item .md-avatar-icon {
-      margin-top: $border-radius-main;
-      margin-bottom: $border-radius-main;
+      //margin-bottom: 8px;
     }
 
     .lead, .chapter h1 {
       text-align: center;
-      margin: 15px 0 10px;
+      margin: $padding 0 $padding;
+    }
+
+    p {
+      margin: $padding 0 $padding;
     }
 
   }

@@ -1,0 +1,22 @@
+@import "main";
+
+.main {
+
+  p + md-list {
+    padding-top: 0;
+  }
+
+  @include responsive-only(xxs) {
+
+    .md-list-item-text {
+      font-size: 90%;
+    }
+
+    md-list-item .md-avatar-icon {
+      margin-top: $border-radius-main;
+      margin-bottom: $border-radius-main;
+    }
+
+  }
+
+}
