@@ -133,10 +133,12 @@
 
       }
 
-      if (roles.salesman || roles.supervisor || roles.driver) {
+      let profileUrl = iosProfileUrl(org, roles);
+
+      if (profileUrl) {
         res.push({
           code: 'iosProfile',
-          url: `https://sistemium.com/${iosProfileUrl(org, roles)}`
+          url: `https://sistemium.com/${profileUrl}`
         })
       }
 
@@ -149,25 +151,6 @@
       }
 
       return res;
-
-    }
-
-    function iosProfileUrl(org, roles) {
-
-      let suffix = roles.driver ? 'ios-drivers' : 'ios-setup';
-
-      switch (org) {
-        case 'r50p':
-        case 'dr50':
-        case 'r50': {
-          return `r50/${suffix}`;
-        }
-        case 'bs':
-        case 'dev': {
-          return `bs/${suffix}`;
-        }
-
-      }
 
     }
 
@@ -189,6 +172,38 @@
         }
       }
 
+    }
+
+    function iosProfileUrl(org, roles) {
+
+      if (org === 'dev') {
+        org = 'bs';
+      } else if (org === 'dr50') {
+        org = 'r50';
+      }
+
+      let mainRoles = ['salesman', 'supervisor', 'driver'];
+
+      let mainRole = _.find(mainRoles, role => roles[role]);
+
+      switch (`${org}/${mainRole}`) {
+        case 'r50/driver': {
+          return 'p15.drivers.mobileconfig';
+
+        }
+        case 'r50/salesman':
+        case 'r50/supervisor': {
+          return 'p15.mobileconfig';
+        }
+        case 'bs/driver': {
+          return 'bs/drivers-JT.mobileconfig';
+
+        }
+        case 'bs/salesman':
+        case 'bs/supervisor': {
+          return 'bs/Sistemium-JT.mobileconfig';
+        }
+      }
     }
 
     function logoffClick(ev) {
