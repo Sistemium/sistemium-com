@@ -4,6 +4,7 @@
 
   position: relative;
   $padding: $padding-main;
+  overflow-x: hidden;
 
   md-list {
 
@@ -32,6 +33,16 @@
 
     strong {
       font-weight: normal;
+      &:after {
+        content: ':';
+      }
+    }
+
+    a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      min-width: 0;
+      overflow: hidden;
     }
 
     md-list-item p > * + * {
@@ -41,11 +52,16 @@
     }
 
     @include responsive-only(xxs) {
+
       md-list-item {
+
         padding: 0;
+
         p {
           display: flex;
           flex-direction: column;
+          min-width: 0;
+
         }
       }
     }
