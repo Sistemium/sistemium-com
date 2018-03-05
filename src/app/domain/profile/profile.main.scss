@@ -109,7 +109,7 @@
 
   .test-environment {
     color: $st-red-color;
-    margin-left: $padding;
+    margin-left: 0.25em;
     &:before {
       content: '(';
     }
