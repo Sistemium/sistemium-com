@@ -134,20 +134,20 @@
 
       }
 
+      if (roles.warehouse || roles.supervisor || roles.logist || roles.stg) {
+        res.push({
+          code: 'stg',
+          url: `https://stg.sistemium.com`,
+          params: `/#/?access-token=${vm.accessToken}`
+        })
+      }
+
       let profileUrl = iosProfileUrl(org, roles);
 
       if (profileUrl) {
         res.push({
           code: 'iosProfile',
           url: `https://sistemium.com/${profileUrl}`
-        })
-      }
-
-      if (roles.warehouse || roles.supervisor || roles.logist || roles.stg) {
-        res.push({
-          code: 'stg',
-          url: `https://stg.sistemium.com`,
-          params: `/#/?access-token=${vm.accessToken}`
         })
       }
 

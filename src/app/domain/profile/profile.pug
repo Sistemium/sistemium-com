@@ -25,7 +25,7 @@
 
   md-list.apps
     md-subheader(translate='PROFILE-PAGE.apps.header')
-    md-list-item(ng-repeat='app in vm.data.apps track by app.code')
+    md-list-item(ng-repeat='app in vm.data.apps track by app.code' ng-class='app.code')
       md-icon(ng-class='{authorized: app.authorized}')
         i.material-icons {{ app.authorized ? 'lock_open' : 'check' }}
       p
