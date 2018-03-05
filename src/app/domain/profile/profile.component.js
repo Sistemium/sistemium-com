@@ -86,6 +86,7 @@
 
       return {
 
+        isTestEnvironment: isTestEnvironment(org),
         orgName: orgName(org),
         mainRole: mainRole(roles),
 
@@ -172,6 +173,10 @@
         }
       }
 
+    }
+
+    function isTestEnvironment(org) {
+      return /dev|dr50/.test(org);
     }
 
     function iosProfileUrl(org, roles) {

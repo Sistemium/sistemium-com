@@ -18,6 +18,7 @@
     },
     "youAre": "You are a member",
     "ofOrg": "of «{{orgName}}» organization",
+    "testEnvironment": "Test environment",
     "assignedRoles": "These are the roles assigned to you",
     "apps": {
       "header": "Applications available to you",

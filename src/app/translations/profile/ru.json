@@ -18,6 +18,7 @@
     },
     "youAre": "Вы член",
     "ofOrg": "организации «{{orgName}}»",
+    "testEnvironment": "Тестовая среда",
     "assignedRoles": "Вам назначены права",
     "apps": {
       "header": "Вам доступны приложения",

@@ -12,9 +12,11 @@
 
   h1 {{ vm.account.name }}
 
-  p.
-    {{ 'PROFILE-PAGE.youAre' | translate }}
-    {{ 'PROFILE-PAGE.ofOrg' | translate:vm.data }}
+  p
+    span.
+      {{ 'PROFILE-PAGE.youAre' | translate }}
+      {{ 'PROFILE-PAGE.ofOrg' | translate:vm.data }}
+    span.test-environment(ng-if='vm.data.isTestEnvironment' translate='PROFILE-PAGE.testEnvironment')
 
   md-subheader.roles(translate='PROFILE-PAGE.assignedRoles')
 

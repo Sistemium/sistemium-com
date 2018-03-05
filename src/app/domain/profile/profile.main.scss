@@ -4,7 +4,7 @@
 
   position: relative;
   $padding: $padding-main;
-  
+
   md-list {
 
     md-icon {
@@ -105,6 +105,17 @@
 
   md-chips-wrap {
     box-shadow: none;
+  }
+
+  .test-environment {
+    color: $st-red-color;
+    margin-left: $padding;
+    &:before {
+      content: '(';
+    }
+    &:after {
+      content: ')';
+    }
   }
 
 }

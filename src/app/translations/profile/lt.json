@@ -18,6 +18,7 @@
     },
     "youAre": "Jūs esate",
     "ofOrg": "«{{orgName}}» organizacijos narys",
+    "testEnvironment": "Bandymo aplinka",
     "assignedRoles": "Tai yra jums priskirti vaidmenys",
     "apps": {
       "header": "Programos prieinamas jums",
