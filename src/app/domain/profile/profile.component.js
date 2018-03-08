@@ -52,7 +52,11 @@
     }
 
     function orgName(org) {
+
       switch (org) {
+        case 'qcm': {
+          return 'КвадроКом';
+        }
         case 'bs':
         case 'dev': {
           return 'ДжейТи-Логистик';
