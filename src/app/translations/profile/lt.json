@@ -21,10 +21,10 @@
     "testEnvironment": "Bandymo aplinka",
     "assignedRoles": "Tai yra jums priskirti vaidmenys",
     "apps": {
-      "header": "Programos prieinamas jums",
+      "header": "Programos prieinamos jums",
       "iosProfile": "iPhone/iPad nustatymų profilis",
-      "jSistemium": "Naršyklinis programėlė",
-      "iOrders": "Sena naršyklinis programėlė",
+      "jSistemium": "Naršyklės programėlė",
+      "iOrders": "Sena naršyklės programėlė",
       "stg": "Programėlė ofisui ir sandeliui"
     }
   }
