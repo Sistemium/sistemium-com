@@ -14,7 +14,8 @@
       "accountant": "Accountant",
       "coordinator": "Coordinator",
       "warehouse": "Storekeeper",
-      "picker": "Picker"
+      "picker": "Picker",
+      "outlet": "Outlet"
     },
     "youAre": "You are a member",
     "ofOrg": "of «{{orgName}}» organization",

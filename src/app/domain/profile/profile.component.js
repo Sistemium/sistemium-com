@@ -73,11 +73,12 @@
     }
 
     const knownRoles = [
-      'admin', '' +
+      'admin',
       'supervisor', 'salesman',
       'accountant',
       'logist', 'driver',
-      'warehouse', 'picker'
+      'warehouse', 'picker',
+      'outlet'
     ];
 
     function mainRole(roles) {
@@ -112,7 +113,7 @@
 
       let res = [];
 
-      if (roles.salesman || roles.supervisor) {
+      if (roles.salesman || roles.supervisor || roles.outlet) {
 
         res.push({
           url: `https://${jSistemiumUrl(org)}.sistemium.com`,

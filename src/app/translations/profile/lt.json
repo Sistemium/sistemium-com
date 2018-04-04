@@ -14,7 +14,8 @@
       "accountant": "Buhalteris",
       "coordinator": "Pardavimų Vadybininkas",
       "warehouse": "Sandėlininkas",
-      "picker": "Rinktuvas"
+      "picker": "Rinktuvas",
+      "outlet": "Prekybos vieta"
     },
     "youAre": "Jūs esate",
     "ofOrg": "«{{orgName}}» organizacijos narys",

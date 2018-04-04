@@ -14,7 +14,8 @@
       "accountant": "Бухгалтер",
       "coordinator": "Координатор",
       "warehouse": "Кладовщик",
-      "picker": "Наборщик"
+      "picker": "Наборщик",
+      "outlet": "Торговая точка"
     },
     "youAre": "Вы член",
     "ofOrg": "организации «{{orgName}}»",
