@@ -78,7 +78,8 @@
       'accountant',
       'logist', 'driver',
       'warehouse', 'picker',
-      'outlet'
+      'outlet',
+      'api'
     ];
 
     function mainRole(roles) {
@@ -121,7 +122,7 @@
           params: `/#/auth?access-token=${vm.accessToken}`
         });
 
-        if (org === 'bs') {
+        if (org === 'bs' && (roles.salesman || roles.supervisor)) {
 
           let app = {
             url: 'https://sistemium.com/bs/tp/',
@@ -153,6 +154,15 @@
         res.push({
           code: 'iosProfile',
           url: `https://sistemium.com/${profileUrl}`
+        })
+      }
+
+      if (roles.api) {
+        res.push({
+          code: 'API',
+          url: `https://api.sistemium.com/v4/${org}`,
+          navigable: false,
+          json: { authorization: vm.accessToken }
         })
       }
 

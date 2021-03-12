@@ -15,7 +15,8 @@
       "coordinator": "Pardavimų Vadybininkas",
       "warehouse": "Sandėlininkas",
       "picker": "Rinktuvas",
-      "outlet": "Prekybos vieta"
+      "outlet": "Prekybos vieta",
+      "api": "API prieiga"
     },
     "youAre": "Jūs esate",
     "ofOrg": "«{{orgName}}» organizacijos narys",
@@ -26,7 +27,8 @@
       "iosProfile": "iPhone/iPad nustatymų profilis",
       "jSistemium": "Naršyklės programėlė",
       "iOrders": "Sena naršyklės programėlė",
-      "stg": "Programėlė ofisui ir sandeliui"
+      "stg": "Programėlė ofisui ir sandeliui",
+      "API": "API vartai"
     }
   }
 }

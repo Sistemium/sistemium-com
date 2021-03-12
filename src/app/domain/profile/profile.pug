@@ -5,8 +5,8 @@
   .options
 
     md-button.logoff.md-warn.md-raised(
-    aria-label='User sign out'
-    ng-click='vm.logoffClick($event)'
+      aria-label='User sign out'
+      ng-click='vm.logoffClick($event)'
     )
       span(translate='PROFILE-PAGE.options.logoff')
 
@@ -30,7 +30,12 @@
         i.material-icons {{ app.authorized ? 'lock_open' : 'check' }}
       p
         strong(translate='PROFILE-PAGE.apps.{{ app.code }}')
-        a(href='{{app.url}}{{app.params||""}}') {{ app.url }}
+        .info
+          a(
+            href="{{ app.url }}{{ app.params || '' }}"
+            ng-class="{ disabled: !app.navigable }"
+          ) {{ app.url }}
+          pre.json(ng-if="app.json") {{ app.json | json }}
 
   //md-list.roles
     md-list-item(ng-repeat='role in vm.roles | orderBy: "code" track by role.code')

@@ -15,7 +15,8 @@
       "coordinator": "Coordinator",
       "warehouse": "Storekeeper",
       "picker": "Picker",
-      "outlet": "Outlet"
+      "outlet": "Outlet",
+      "api": "API access"
     },
     "youAre": "You are a member",
     "ofOrg": "of «{{orgName}}» organization",
@@ -26,7 +27,8 @@
       "iosProfile": "Provisioning profile for iPhone/iPad",
       "jSistemium": "Browser application",
       "iOrders": "Old browser application",
-      "stg": "Office and warehouse program"
+      "stg": "Office and warehouse program",
+      "API": "API gateway"
     }
   }
 }
