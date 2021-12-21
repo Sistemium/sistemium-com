@@ -16,7 +16,8 @@ require('sistemium-gulp')
       }
     },
     others: {
-      flags: ['./bower_components/flag-icon-css/flags/**/{ru,gb,lt}.*', '/flags', false]
+      flags: ['./bower_components/flag-icon-css/flags/**/{ru,gb,lt}.*', '/flags', false],
+      static: ['./src/static/*.*', '/static', false]
     }
   })
   .run(require('gulp'));
