@@ -1,5 +1,50 @@
 {
   "SERVICES-PAGE": {
-    "LEAD": "Enterprise information technology"
+    "LEAD": "Enterprise information technology",
+    "businessFormation": {
+      "learn": "Our specialists will study in detail all the subtleties of your company's business processes by directly observing the work of your employees.",
+      "analyze": "The information obtained will be analyzed, and a general information picture will be compiled.",
+      "understand": "Then we will highlight the main areas where it is possible to increase the efficiency of your work with the help of our technologies.",
+      "options": {
+        "handheld": "For example, this could mean replacing paper-based media with software on a tablet or smartphone.",
+        "barcode": "Where possible, we'll suggest using barcode scanners instead of manual input."
+      },
+      "integration": "Any information that will be collected from us electronically can then be transferred to your company's accounting system through an automatic integration module.",
+      "benefits": {
+        "noHandProcessing": "Thus, there will be no need to use manual labor of operators who take voice information over the phone or on paper and enter it into the computer.",
+        "lessErrors": "In addition to the direct savings in labor costs, this will have the benefit of eliminating the errors that humans inevitably make when processing data from paper or by ear."
+      }
+    },
+    "mobileApps": {
+      "build": "Our platform allows us to build customized mobile apps for iOS and Android in a matter of days.",
+      "customized": "The programs will reflect those, and only those details of business processes that your employees need.",
+      "networked": "For data exchange, mobile devices must be connected to a cellular network or WiFi.",
+      "offlineCapable": "The program will save all information required for work in the memory of the device and will work even if the data network is unavailable for some time.",
+      "backgroundSyncing": "As soon as network access is restored, data exchange will start automatically: the data entered by the user will be sent to the server, then the fresh data from the accounting system will be received and saved.",
+      "supportBarcodeScanners": "Wireless barcode scanners can be connected to a mobile device with our software, allowing them to be used in warehouses and production processes.",
+      "voiceControl": "When using wireless headphones, the device can transmit voice commands to the user.",
+      "voiceControlBenefits": "This can allow an employee's hands to be free to perform coordinated physical work without having to interact with the device's screen, which may be in their pocket at the time."
+    },
+    "webApps": {
+      "withModernBrowser": "Our desktop apps work over the Internet in any modern browser.",
+      "takeAnyDevice": "Sitting down at any computer or picking up a tablet or smartphone,",
+      "withoutInstallation": "you can get started right away without having to download and install the app.",
+      "needAuthOnlyOnce": "you will need authorization to log in to our system on a separate device for the first time.",
+      "weUseNoPasswords": "We don't use usernames or passwords to authorize users - they can easily be forgotten or snooped on.",
+      "authWithMobile": "Instead, the system sends the user a text code to a personal cell phone.",
+      "willAutoRefresh": "If there is an update, the program will immediately notify the user that a new version is available and offer to switch to it.",
+      "alwaysActual": "Thus, in a matter of seconds, all of your users will be able to work with the current version of the application.",
+      "withoutITEffort": "without additional action by the IT staff that maintains the workstations."
+    },
+    "infrastructure": {
+      "amazonHosting": "Our server systems run in the Amazon Web Services cloud, the world's most reliable electronic service.",
+      "fullyManaged": "We fully provide the customer with the operation of all cloud resources.",
+      "customerDoesNotPay": ", which means zero cost to build and then monitor a highly available server infrastructure."
+    },
+    "support": {
+      "inCaseOfAnyIssues": "During the course of working with our systems, your rank-and-file employees, management and IT staff may require prompt assistance.",
+      "byAnyContactMethod": "We are available 24/7 to take phone calls, emails and calls through other communication channels,",
+      "weWillHelp": "to answer questions, solve problems and correct errors when needed."
+    }
   }
 }

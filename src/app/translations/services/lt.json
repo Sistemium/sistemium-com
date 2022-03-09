@@ -1,5 +1,50 @@
 {
   "SERVICES-PAGE": {
-    "LEAD": "Informacinės sistemos verslui"
+    "LEAD": "Informacinės sistemos verslui",
+    "businessFormation": {
+      "learn": "Mūsų ekspertai išsamiai ištirs jūsų verslo procesų subtilybes, tiesiogiai stebėdami jūsų darbuotojų darbą.",
+      "analyze": "Gauta informacija bus analizuojama ir sudaromas bendras informacinis vaizdas.",
+      "understand": "Tada išryškinsime pagrindines sritis, kuriose mūsų technologijos gali padidinti jūsų veiklos efektyvumą.",
+      "options": {
+        "handheld": "Pavyzdžiui, tai gali reikšti, kad popierinės laikmenos bus pakeistos programine įranga planšetiniame kompiuteryje arba išmaniajame telefone.",
+        "barcode": "Jei įmanoma, siūlome naudoti brūkšninių kodų skaitytuvus, o ne įvesti duomenis rankiniu būdu."
+      },
+      "integration": "Visą elektroniniu būdu surinktą informaciją galima perkelti į jūsų įmonės apskaitos sistemą naudojant automatinės integracijos modulį.",
+      "benefits": {
+        "noHandProcessing": "Todėl nebereikia operatorių, kurie telefonu arba popieriuje priima balso informaciją ir įveda ją į kompiuterį.",
+        "lessErrors": "Be tiesioginių darbo sąnaudų taupymo, taip pat bus išvengta klaidų, kurias neišvengiamai padaro žmonės, apdorodami duomenis iš popieriaus ar iš klausos."
+      }
+    },
+    "mobileApps": {
+      "build": "Mūsų platforma leidžia per kelias dienas sukurti individualias mobiliąsias programėles \"iOS\" ir \"Android\".",
+      "customized": "Programose bus atspindėtos tos ir tik tos verslo procesų detalės, kurios reikalingos jūsų darbuotojams.",
+      "networked": "Mobilieji prietaisai turi būti prijungti prie korinio arba \"WiFi\" tinklo, kad būtų galima dalytis duomenimis.",
+      "offlineCapable": "Programinė įranga išsaugos visą darbui reikalingą informaciją įrenginio atmintyje ir veiks net jei duomenų perdavimo tinklas kurį laiką bus nepasiekiamas.",
+      "backgroundSyncing": "Kai tik bus atkurta prieiga prie tinklo, automatiškai prasidės keitimasis duomenimis: naudotojo įvesti duomenys bus siunčiami į serverį, tada bus gaunami ir išsaugomi nauji duomenys iš apskaitos sistemos.",
+      "supportBarcodeScanners": "Belaidžius brūkšninių kodų skaitytuvus su mūsų programine įranga galima prijungti prie mobiliojo įrenginio, todėl juos galima naudoti sandėliuose ir gamybos procesuose.",
+      "voiceControl": "Naudojant belaides ausines, prietaisas gali perduoti balso komandas naudotojui.",
+      "voiceControlBenefits": "Taip darbuotojo rankos gali būti laisvos ir jis gali atlikti koordinuotą fizinį darbą, nesinaudodamas įrenginio ekranu, kuris tuo metu gali būti kišenėje."
+    },
+    "webApps": {
+      "withModernBrowser": "Mūsų darbalaukio programos veikia internetu bet kurioje šiuolaikinėje naršyklėje.",
+      "takeAnyDevice": "Sėdėdami prie bet kurio kompiuterio arba paimdami planšetinį kompiuterį ar išmanųjį telefoną,",
+      "withoutInstallation": "galite iš karto pradėti dirbti be programėlės atsisiuntimo ir įdiegimo.",
+      "needAuthOnlyOnce": "jums reikės leidimo pirmą kartą prisijungti prie mūsų sistemos atskirame įrenginyje.",
+      "weUseNoPasswords": "Naudotojams autorizuoti nenaudojame vartotojo vardų ir slaptažodžių - juos galima lengvai pamiršti arba šnipinėti.",
+      "authWithMobile": "Vietoj to sistema siunčia teksto kodą į naudotojo asmeninį mobilųjį telefoną.",
+      "willAutoRefresh": "Jei yra atnaujinimas, programinė įranga nedelsdama praneš naudotojui, kad yra nauja versija, ir pasiūlys ją atnaujinti.",
+      "alwaysActual": "Taigi, per kelias sekundes visi jūsų naudotojai galės dirbti su naujausia programos versija.",
+      "withoutITEffort": "be papildomų IT darbuotojų, prižiūrinčių darbo vietas, veiksmų."
+    },
+    "infrastructure": {
+      "amazonHosting": "Mūsų serverių sistemos veikia \"Amazon Web Services\" debesyje - patikimiausioje pasaulyje elektroninėje paslaugoje.",
+      "fullyManaged": "Klientui visiškai užtikriname visų debesijos išteklių valdymą",
+      "customerDoesNotPay": ", o tai reiškia, kad nėra jokių sąnaudų kuriant ir stebint itin prieinamą serverių infrastruktūrą."
+    },
+    "support": {
+      "inCaseOfAnyIssues": "Dirbant su mūsų sistemomis jūsų eiliniams darbuotojams, vadovybei ir IT darbuotojams gali prireikti skubios pagalbos.",
+      "byAnyContactMethod": "Esame pasirengę visą parą ir 7 dienas per savaitę priimti skambučius telefonu, el. laiškus ir skambučius kitais ryšio kanalais,",
+      "weWillHelp": "prireikus atsakyti į klausimus, spręsti problemas ir šalinti klaidas."
+    }
   }
 }
