@@ -2,14 +2,15 @@
 
 (function () {
 
-  function LangService(localStorageService) {
+  function LangService($translate) {
 
     function getLang() {
-      return localStorageService.get('lang') || 'ru';
+      console.log($translate.resolveClientLocale());
+      return $translate.proposedLanguage();
     }
 
     function availableLanguages() {
-      return ['ru', 'en', 'lt']
+      return ['lt', 'ru', 'en'];
     }
 
     return {

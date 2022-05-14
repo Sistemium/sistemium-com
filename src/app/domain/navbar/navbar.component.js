@@ -88,7 +88,6 @@
     }
 
     function changeLanguage(lang) {
-      localStorageService.set('lang', lang.key);
       $translate.use(vm.lang = lang.key);
     }
 

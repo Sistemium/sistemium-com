@@ -41,9 +41,14 @@
       }]
     });
 
+    const locale = $translateProvider.resolveClientLocale() || 'lt';
+    const localeLang = locale.substring(0, 2);
+    const LANGS = ['en', 'ru', 'lt'];
+    const clientLang = _.find(LANGS, l => l === localeLang);
+
     $translateProvider
-      .preferredLanguage('ru')
-      .fallbackLanguage(['ru', 'en', 'lt'])
+      .preferredLanguage(clientLang)
+      .fallbackLanguage(LANGS)
       .useLocalStorage()
       .useSanitizeValueStrategy('escape');
 
