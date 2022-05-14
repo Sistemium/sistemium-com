@@ -1,0 +1,9 @@
+{
+  "PRICINGPAGE": {
+    "LEAD": "Sistemium pricing",
+    "user": {
+      "monthly": "30€ monthly each active user"
+    },
+    "largeVolume": "Custom price for 100+ users"
+  }
+}

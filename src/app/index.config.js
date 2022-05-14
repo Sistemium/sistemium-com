@@ -27,6 +27,9 @@
         prefix: 'app/translations/services/',
         suffix: '.json'
       }, {
+        prefix: 'app/translations/pricing/',
+        suffix: '.json'
+      }, {
         prefix: 'app/translations/about/',
         suffix: '.json'
       }, {
