@@ -5,7 +5,6 @@
   function LangService($translate) {
 
     function getLang() {
-      console.log($translate.resolveClientLocale());
       return $translate.proposedLanguage();
     }
 
