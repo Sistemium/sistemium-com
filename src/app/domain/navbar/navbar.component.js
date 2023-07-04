@@ -35,8 +35,8 @@
         {state: 'services'},
         {state: 'contacts'},
         {state: 'pricing'},
-        {state: 'about'},
-        {state: 'login', icon: 'vpn_key'}
+        {state: 'about'}
+        // {state: 'login', icon: 'vpn_key'}
       ],
 
       currentState: null,
