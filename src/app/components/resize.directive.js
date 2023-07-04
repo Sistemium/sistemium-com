@@ -21,7 +21,7 @@
       let offsetTopMinus = attrs.resizeOffsetTop ? parseInt(attrs.resizeOffsetTop) : 0;
       let offsetTopMinusXs = attrs.resizeOffsetTopXs ? parseInt(attrs.resizeOffsetTopXs) : offsetTopMinus;
 
-      element.css('overflow-y', 'scroll');
+      element.css('overflow-y', 'auto');
 
       function resizeOffsetTop(newValue) {
         let offset = newValue.windowWidth > SCREEN_SM_MIN ? offsetTopMinus : offsetTopMinusXs;

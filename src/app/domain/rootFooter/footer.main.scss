@@ -1,8 +1,9 @@
+@use "sass:math";
 @import "main/main";
 
 .main root-footer {
 
-  $padding: $padding-main/2;
+  $padding: math.div($padding-main, 2);
   $margin: $padding-main;
 
   box-sizing: border-box;
