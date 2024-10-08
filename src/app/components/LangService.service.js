@@ -9,7 +9,7 @@
     }
 
     function availableLanguages() {
-      return ['lt', 'ru', 'en'];
+      return ['lt', 'en'];
     }
 
     return {

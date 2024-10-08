@@ -46,7 +46,7 @@
 
     const locale = $translateProvider.resolveClientLocale() || 'lt';
     const localeLang = locale.substring(0, 2);
-    const LANGS = ['en', 'ru', 'lt'];
+    const LANGS = ['en', 'lt'];
     const clientLang = _.find(LANGS, l => l === localeLang);
 
     $translateProvider

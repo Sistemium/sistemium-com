@@ -27,7 +27,7 @@
 
       languages: [
         {label: 'English', key: 'en', class: 'flag-icon-gb'},
-        {label: 'Русский', key: 'ru', class: 'flag-icon-ru'},
+        // {label: 'Русский', key: 'ru', class: 'flag-icon-ru'},
         {label: 'Lietuvių', key: 'lt', class: 'flag-icon-lt'}
       ],
 

@@ -38,8 +38,8 @@
     },
     "infrastructure": {
       "amazonHosting": "Our server systems run in the Amazon Web Services cloud, the world's most reliable electronic service.",
-      "fullyManaged": "We fully provide the customer with the operation of all cloud resources.",
-      "customerDoesNotPay": ", which means zero cost to build and then monitor a highly available server infrastructure."
+      "fullyManaged": "We fully operationalize cloud resources for the customer,",
+      "complexSolutionOnRequest": "eliminating the need to keep in-house specialists to maintain complex systems."
     },
     "support": {
       "inCaseOfAnyIssues": "During the course of working with our systems, your rank-and-file employees, management and IT staff may require prompt assistance.",
