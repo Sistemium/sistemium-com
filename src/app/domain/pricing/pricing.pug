@@ -1,15 +1,23 @@
 #pricing.chapter
 
-  p.lead(translate='PRICINGPAGE.LEAD')
+  p.lead(translate='PRICING-PAGE.LEAD')
 
   md-list.options
 
     md-list-item
       md-icon
         i.material-icons account_circle
-      p(translate='PRICINGPAGE.user.monthly')
+      p(translate='PRICING-PAGE.user.monthly')
 
     md-list-item
       md-icon
         i.material-icons people_outline
-      p(translate='PRICINGPAGE.largeVolume')
+      p(translate='PRICING-PAGE.user.largeVolume')
+
+    md-list-item
+      md-icon
+        i.material-icons timer
+      p
+        span(translate='PRICING-PAGE.hourly.someServicesChargedHourly')
+        span='. '
+        span(translate='PRICING-PAGE.hourly.hourlyRate')

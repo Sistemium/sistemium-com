@@ -1,9 +1,13 @@
 {
-  "PRICINGPAGE": {
+  "PRICING-PAGE": {
     "LEAD": "Sistemium pricing",
     "user": {
-      "monthly": "30€ monthly each active user"
+      "monthly": "Basically we charge 50€ per month for each active user of the software we have created for you",
+      "largeVolume": "Custom price for 100+ users"
     },
-    "largeVolume": "Custom price for 100+ users"
+    "hourly": {
+      "someServicesChargedHourly": "Some services, such as configuring AWS services, are billed per hour",
+      "hourlyRate": "The basic hourly rate is 100€"
+    }
   }
 }
