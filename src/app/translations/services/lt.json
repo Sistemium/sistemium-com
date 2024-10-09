@@ -39,7 +39,9 @@
     "infrastructure": {
       "amazonHosting": "Mūsų serverių sistemos veikia \"Amazon Web Services\" debesyje - patikimiausioje pasaulyje elektroninėje paslaugoje.",
       "fullyManaged": "Klientui visiškai užtikriname visų debesijos išteklių valdymą,",
-      "complexSolutionOnRequest": "o tai reiškia, kad nėra jokių sąnaudų kuriant ir stebint itin prieinamą serverių infrastruktūrą."
+      "complexSolutionOnRequest": "o tai reiškia, kad nėra jokių sąnaudų kuriant ir stebint itin prieinamą serverių infrastruktūrą.",
+      "awsExperienced": "Remdamiesi ilgamete „AWS“ naudojimo patirtimi galime ne tik įdiegti veiksmingas konfigūracijas,",
+      "canTeach": "bet ir apmokyti jūsų inžinierius, kaip jas įgyvendinti ir prižiūrėti."
     },
     "support": {
       "inCaseOfAnyIssues": "Dirbant su mūsų sistemomis jūsų eiliniams darbuotojams, vadovybei ir IT darbuotojams gali prireikti skubios pagalbos.",
