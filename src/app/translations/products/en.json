@@ -12,6 +12,10 @@
     "maintenance": {
       "title": "Periodic maintenance",
       "description": "Manage a database of customers who need to be visited from time to time. Allocate tasks to employees, manage pricing and keep records of payments"
+    },
+    "pico": {
+      "title": "Raspberry Pi programming",
+      "description": "We could implement the logic of operation and remote diagnostics of your electrical components by means of a controlled microcontroller"
     }
   }
 }

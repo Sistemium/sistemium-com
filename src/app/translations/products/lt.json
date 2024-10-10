@@ -12,6 +12,10 @@
     "maintenance": {
       "title": "Periodinis aptarnavimas",
       "description": "Tvarkykite klientų, kuriuos reikia retkarčiais aplankyti, duomenų bazę. Skirkite užduotis darbuotojams, tvarkykite kainodarą ir registruokite mokėjimus."
+    },
+    "pico": {
+      "title": "Raspberry Pi programavimas",
+      "description": "Galime įdiegti jūsų elektros komponentų veikimo logiką ir nuotolinę diagnostiką naudodami valdomą mikrovaldiklį."
     }
   }
 }
