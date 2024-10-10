@@ -24,6 +24,9 @@
         prefix: 'app/translations/locale-',
         suffix: '.json'
       }, {
+        prefix: 'app/translations/products/',
+        suffix: '.json'
+      },{
         prefix: 'app/translations/services/',
         suffix: '.json'
       }, {

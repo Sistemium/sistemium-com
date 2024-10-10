@@ -7,6 +7,7 @@
     "main": "Pagrindinis"
   },
   "SERVICES": "Paslaugos",
+  "PRODUCTS": "Sprendimai",
   "PRICING": "Kainos",
   "CONTACTS": "Kontaktai",
   "ABOUT": "Apie",
@@ -18,7 +19,7 @@
   "HOMEPAGE": {
     "LEAD": "Automatizacija įmonėms",
     "options": {
-      "login": "Įėjimas klientams",
+      "expertise": "Sprendimų patirtis",
       "contact": "Susisiekite su mumis",
       "learn": "Daugiau apie paslaugas"
     }

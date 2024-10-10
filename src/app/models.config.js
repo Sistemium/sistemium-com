@@ -35,7 +35,7 @@
           .get(
             basePath + this.endpoint,
             {
-              params: angular.extend({
+              params: _.assign({
                 'agg:': 'count'
               }, params || {})
             }

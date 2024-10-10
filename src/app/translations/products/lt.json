@@ -1,0 +1,17 @@
+{
+  "PRODUCTS-PAGE": {
+    "LEAD": "Sprendimai, kuriuose esame ypač kompetentingi",
+    "warehouse": {
+      "title": "Sandelis",
+      "simpleButEffective": "Simple but effective browser application covering all needs of a small business or an individual entrepreneur"
+    },
+    "iot": {
+      "title": "Daiktų internetas",
+      "description": "Daugelis namų ir biuro prietaisų gali būti valdomi naudojant serverio automatiką arba mūsų programėlę"
+    },
+    "maintenance": {
+      "title": "Periodinis aptarnavimas",
+      "description": "Tvarkykite klientų, kuriuos reikia retkarčiais aplankyti, duomenų bazę. Skirkite užduotis darbuotojams, tvarkykite kainodarą ir registruokite mokėjimus."
+    }
+  }
+}

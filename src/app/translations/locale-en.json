@@ -7,7 +7,7 @@
     "main": "Main"
   },
   "SERVICES": "Services",
-  "PRODUCTS": "",
+  "PRODUCTS": "Solutions",
   "PRICING": "Pricing",
   "CONTACTS": "Contacts",
   "ABOUT": "About",
@@ -19,7 +19,7 @@
   "HOMEPAGE": {
     "LEAD": "Enterprise automation",
     "options": {
-      "login": "Customer login",
+      "expertise": "Solution Experience",
       "contact": "Contact us",
       "learn": "Learn more"
     }

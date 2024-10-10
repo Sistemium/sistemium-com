@@ -1,0 +1,17 @@
+{
+  "PRODUCTS-PAGE": {
+    "LEAD": "Solutions in which we are particularly competent",
+    "warehouse": {
+      "title": "Warehouse",
+      "simpleButEffective": "A simple but effective browser application that meets all the needs of a small business or sole trader"
+    },
+    "iot": {
+      "title": "Internet of Things",
+      "description": "Many home and office appliances can be controlled by server automation or with our application"
+    },
+    "maintenance": {
+      "title": "Periodic maintenance",
+      "description": "Manage a database of customers who need to be visited from time to time. Allocate tasks to employees, manage pricing and keep records of payments"
+    }
+  }
+}

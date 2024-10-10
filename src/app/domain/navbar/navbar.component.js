@@ -26,16 +26,17 @@
       changeState,
 
       languages: [
-        {label: 'English', key: 'en', class: 'flag-icon-gb'},
+        { label: 'English', key: 'en', class: 'flag-icon-gb' },
         // {label: 'Русский', key: 'ru', class: 'flag-icon-ru'},
-        {label: 'Lietuvių', key: 'lt', class: 'flag-icon-lt'}
+        { label: 'Lietuvių', key: 'lt', class: 'flag-icon-lt' }
       ],
 
       items: [
-        {state: 'services'},
-        {state: 'contacts'},
-        {state: 'pricing'},
-        {state: 'about'}
+        { state: 'services' },
+        { state: 'products' },
+        { state: 'contacts' },
+        { state: 'pricing' },
+        { state: 'about' }
         // {state: 'login', icon: 'vpn_key'}
       ],
 
@@ -55,7 +56,7 @@
     $scope.$watch('vm.lang', (nv, ov) => {
       if (nv !== ov) {
         moment.locale(nv);
-        $state.go($state.current, {}, {reload: true});
+        $state.go($state.current, {}, { reload: true });
       }
     });
 
@@ -70,9 +71,9 @@
     function onAuth(res) {
 
       if (res && !vm.isAuthorized) {
-        _.remove(vm.items, {state: 'login'});
+        _.remove(vm.items, { state: 'login' });
         let state = 'profile';
-        vm.items.push({state, icon: 'account_circle', translate: _.upperCase(state)});
+        vm.items.push({ state, icon: 'account_circle', translate: _.upperCase(state) });
       }
 
       vm.isAuthorized = !!res;
