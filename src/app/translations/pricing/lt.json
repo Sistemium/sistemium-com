@@ -2,11 +2,11 @@
   "PRICING-PAGE": {
     "LEAD": "Sistemium kainoraštis",
     "user": {
-      "monthlySAAS": "Iš esmės mes imame 50€ per mėnesį už kiekvieną aktyvų programinės įrangos, kurią sukūrėme jums, naudotoją",
-      "largeVolume": "Pritaikyta kaina daugiau nei 100 naudotojų"
+      "monthlySAAS": "Iš esmės už kiekvieną aktyvų programinės įrangos, kurią jums teikiame, naudotoją imame 50€ per mėnesį",
+      "largeVolume": "Jei yra daugiau nei 100 naudotojų, galime susitarti dėl mažesnio tarifo"
     },
     "hourly": {
-      "someServicesChargedHourly": "Už kai kurias paslaugas, pavyzdžiui, AWS paslaugų konfigūravimą, atsiskaitoma už valandą",
+      "someServicesChargedHourly": "Už kai kurias paslaugas, pavyzdžiui, AWS konfigūravimą, atsiskaitoma už valandą",
       "hourlyRate": "Pagrindinis valandos paslaugų įkainis yra 100€"
     }
   }

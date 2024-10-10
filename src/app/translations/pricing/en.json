@@ -2,8 +2,8 @@
   "PRICING-PAGE": {
     "LEAD": "Sistemium pricing",
     "user": {
-      "monthly": "Basically we charge 50€ per month for each active user of the software we have created for you",
-      "largeVolume": "Custom price for 100+ users"
+      "monthly": "Basically, we charge 50€ per month for each active user of the software we provide to you",
+      "largeVolume": "If there will be more than 100 users, we can negotiate a reduced rate"
     },
     "hourly": {
       "someServicesChargedHourly": "Some services, such as configuring AWS services, are billed per hour",
