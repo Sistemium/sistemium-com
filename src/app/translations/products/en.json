@@ -16,6 +16,10 @@
     "pico": {
       "title": "Raspberry Pi programming",
       "description": "We could implement the logic of operation and remote diagnostics of your electrical components by means of a controlled microcontroller"
+    },
+    "integration": {
+      "title": "API integration",
+      "description": "We will ensure automatic data exchange between your information systems"
     }
   }
 }

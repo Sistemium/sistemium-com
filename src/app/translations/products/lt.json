@@ -16,6 +16,10 @@
     "pico": {
       "title": "Raspberry Pi programavimas",
       "description": "Galime įdiegti jūsų elektros komponentų veikimo logiką ir nuotolinę diagnostiką naudodami valdomą mikrovaldiklį."
+    },
+    "integration": {
+      "title": "API integracija",
+      "description": "Užtikrinsime automatinį keitimąsi duomenimis tarp jūsų informacinių sistemų"
     }
   }
 }
