@@ -20,6 +20,10 @@
     "integration": {
       "title": "API integration",
       "description": "We will ensure automatic data exchange between your information systems"
+    },
+    "bots": {
+      "title": "Telegram bots",
+      "description": "We automate tasks, improve user interaction and simplify business processes with the help of a popular instant messenger"
     }
   }
 }

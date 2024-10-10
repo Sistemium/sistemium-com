@@ -20,6 +20,10 @@
     "integration": {
       "title": "API integracija",
       "description": "Užtikrinsime automatinį keitimąsi duomenimis tarp jūsų informacinių sistemų"
+    },
+    "bots": {
+      "title": "Telegram botai",
+      "description": "Automatizuokite užduotis, pagerinkite naudotojų sąveiką ir supaprastinkite verslo procesus naudodamiesi populiaria žinučių programėle"
     }
   }
 }
