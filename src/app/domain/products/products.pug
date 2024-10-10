@@ -4,33 +4,35 @@
 
   p.lead(translate='PRODUCTS-PAGE.LEAD')
 
+  section.warehouse
+    h2(translate='PRODUCTS-PAGE.warehouse.title')
 
-  h2(translate='PRODUCTS-PAGE.warehouse.title')
+    img(
+      src='/static/urban-687.svg'
+      width="200"
+    )
 
-  img(
-    src='/static/urban-687.svg'
-    width="200"
-  )
+    p.text.
+      {{ 'PRODUCTS-PAGE.warehouse.simpleButEffective' | translate }}
 
-  p.text.
-    {{ 'PRODUCTS-PAGE.warehouse.simpleButEffective' | translate }}
+  section.iot
+    h2(translate='PRODUCTS-PAGE.iot.title')
 
-  h2(translate='PRODUCTS-PAGE.iot.title')
+    img(
+      src='/static/juicy-smart-house-with-iot-devices.svg'
+      width="200"
+    )
 
-  img(
-    src='/static/juicy-smart-house-with-iot-devices.svg'
-    width="200"
-  )
+    p.text.
+      {{ 'PRODUCTS-PAGE.iot.description' | translate }}
 
-  p.text.
-    {{ 'PRODUCTS-PAGE.iot.description' | translate }}
+  section.maintenance
+    h2(translate='PRODUCTS-PAGE.maintenance.title')
 
-  h2(translate='PRODUCTS-PAGE.maintenance.title')
+    img(
+      src='/static/marginalia-electrician-fixing-sockets.svg'
+      width="200"
+    )
 
-  img(
-    src='/static/marginalia-electrician-fixing-sockets.svg'
-    width="200"
-  )
-
-  p.text.
-    {{ 'PRODUCTS-PAGE.maintenance.description' | translate }}
+    p.text.
+      {{ 'PRODUCTS-PAGE.maintenance.description' | translate }}

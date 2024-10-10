@@ -1,0 +1,18 @@
+#products.chapter {
+
+  @media all and (min-width: 768px) {
+    section {
+      display: flex;
+      flex-flow: row wrap;
+
+      & > h2 {
+        flex: 1 100%;
+      }
+
+      p {
+        flex: 1;
+      }
+    }
+  }
+
+}
