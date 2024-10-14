@@ -2,7 +2,7 @@
   "PRICING-PAGE": {
     "LEAD": "Sistemium kainoraštis",
     "user": {
-      "monthlySAAS": "Iš esmės už kiekvieną aktyvų programinės įrangos, kurią jums teikiame, naudotoją imame 50€ per mėnesį",
+      "monthly": "Iš esmės už kiekvieną aktyvų programinės įrangos, kurią jums teikiame, naudotoją imame 50€ per mėnesį",
       "largeVolume": "Jei yra daugiau nei 100 naudotojų, galime susitarti dėl mažesnio tarifo"
     },
     "hourly": {
